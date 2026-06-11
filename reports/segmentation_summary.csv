@@ -1,0 +1,5 @@
+segment,donors,avg_recency_days,avg_frequency,avg_units_donated,interpretation
+Active Donors,1241,326.73811442385175,4.174858984689767,4.174858984689767,Moderate-to-high engagement with recent activity
+Lost Donors,874,17.689931350114417,8.331807780320366,8.331807780320366,Long inactive period with low recent engagement
+At-Risk Donors,859,68.63329452852153,7.965075669383004,7.965075669383004,Previously active but recency is deteriorating
+Loyal Donors,492,193.40447154471545,9.939024390243903,9.939024390243903,"High frequency, recent, high volume"

@@ -1,0 +1,152 @@
+[
+  {
+    "feature": "num__max_gap_days",
+    "importance_mean": 0.0016455696202531734,
+    "importance_std": 0.0013924050632911466
+  },
+  {
+    "feature": "cat__age_group_18-25",
+    "importance_mean": 0.0011708860759493734,
+    "importance_std": 0.000970750737353041
+  },
+  {
+    "feature": "cat__Blood_Group_B+",
+    "importance_mean": 0.0010759493670886133,
+    "importance_std": 0.0006360680772861358
+  },
+  {
+    "feature": "num__Age",
+    "importance_mean": 0.00104430379746836,
+    "importance_std": 0.0015889101532447164
+  },
+  {
+    "feature": "cat__Blood_Group_O-",
+    "importance_mean": 0.0005379746835443066,
+    "importance_std": 0.0005490301130663786
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Rare (once)",
+    "importance_mean": 0.0005063291139240534,
+    "importance_std": 0.000620123985514732
+  },
+  {
+    "feature": "cat__Blood_Group_B-",
+    "importance_mean": 0.00034810126582278665,
+    "importance_std": 0.0002628678437632316
+  },
+  {
+    "feature": "cat__Blood_Group_A+",
+    "importance_mean": 0.00031645569620253333,
+    "importance_std": 0.0010399795395667766
+  },
+  {
+    "feature": "cat__Gender_Male",
+    "importance_mean": 0.00028481012658228,
+    "importance_std": 0.00045749469287345053
+  },
+  {
+    "feature": "cat__age_group_26-35",
+    "importance_mean": 3.1645569620253336e-05,
+    "importance_std": 0.0002985437067106536
+  },
+  {
+    "feature": "cat__Blood_Group_O+",
+    "importance_mean": 3.1645569620253336e-05,
+    "importance_std": 0.0008888969560245705
+  },
+  {
+    "feature": "cat__Blood_Group_A-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "num__average_units_per_donation",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_AB-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "num__is_first_donation",
+    "importance_mean": -0.00015822784810126667,
+    "importance_std": 0.0004746835443038
+  },
+  {
+    "feature": "cat__age_group_46-60",
+    "importance_mean": -0.00018987341772152,
+    "importance_std": 0.0005333006185554686
+  },
+  {
+    "feature": "cat__Blood_Group_AB+",
+    "importance_mean": -0.00041139240506329335,
+    "importance_std": 0.0003180340386430679
+  },
+  {
+    "feature": "cat__age_group_36-45",
+    "importance_mean": -0.0004430379746835467,
+    "importance_std": 0.0007380951765627001
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Regular (3-4/year)",
+    "importance_mean": -0.0006012658227848133,
+    "importance_std": 0.0006554530119369649
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Occasional (1-2/year)",
+    "importance_mean": -0.0009177215189873466,
+    "importance_std": 0.0004993586657613792
+  },
+  {
+    "feature": "cat__Gender_Female",
+    "importance_mean": -0.00123417721518988,
+    "importance_std": 0.0006853293616363237
+  },
+  {
+    "feature": "num__min_gap_days",
+    "importance_mean": -0.0013607594936708932,
+    "importance_std": 0.001184491599507152
+  },
+  {
+    "feature": "num__donation_velocity",
+    "importance_mean": -0.0014556962025316534,
+    "importance_std": 0.00132911392405064
+  },
+  {
+    "feature": "num__std_gap_days",
+    "importance_mean": -0.0014873417721519067,
+    "importance_std": 0.0019303797468354536
+  },
+  {
+    "feature": "num__tenure_days",
+    "importance_mean": -0.00151898734177216,
+    "importance_std": 0.001420882551939479
+  },
+  {
+    "feature": "num__donation_type_whole_blood_share",
+    "importance_mean": -0.00151898734177216,
+    "importance_std": 0.000690424817382011
+  },
+  {
+    "feature": "num__donations_last_6_months",
+    "importance_mean": -0.0018670886075949466,
+    "importance_std": 0.0013158622079931584
+  },
+  {
+    "feature": "num__years_as_donor",
+    "importance_mean": -0.0030696202531645734,
+    "importance_std": 0.002178953162671152
+  },
+  {
+    "feature": "num__donations_last_3_months",
+    "importance_mean": -0.0030696202531645734,
+    "importance_std": 0.0008614340246086248
+  },
+  {
+    "feature": "num__recent_activity_score",
+    "importance_mean": -0.0035443037974683734,
+    "importance_std": 0.0011823760564727533
+  }
+]

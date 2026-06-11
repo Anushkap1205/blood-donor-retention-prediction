@@ -1,0 +1,8 @@
+segment,condition,intervention,evidence,expected_impact,priority
+High churn risk,retention_probability < 0.50,SMS reminder with altruistic appeal,"Yang et al. (2020); Mohammed et al. (2025, South India)",High,1
+First-time donors,is_first_donation == 1,Post-donation counseling and thank-you follow-up within 7 days,"Bagot et al. (2016); Masser et al. (2012, TPB)",High,1
+High churn risk,retention_probability < 0.50 and months_since_last_donation > 12,Personalized phone outreach,Yang et al. (2020) RCT: phone calls effective for long-inactive donors,High,2
+Camp-oriented donors,camp_ratio >= 0.60,Local camp notifications and early registration,"Srivastava et al. (2025, South India); van Dongen (2015)",Medium-High,3
+At-risk donors,0.50 <= retention_probability < 0.80,Personalized donation invitation with preferred channel,Kauten et al. (2021); Liu et al. (2022),Medium,3
+Female donors,Gender == Female and retention_probability < 0.70,Deferral-aware SMS with hemoglobin education and flexible scheduling,"Marwaha et al. (2012); Sachdeva et al. (2023, India)",Medium,3
+Frequent donors,total_donations >= 5 and retention_probability >= 0.80,Recognition certificate and loyalty appreciation campaign,"Malhotra et al. (2026, North India); Grazzini (2021)",Medium,4

@@ -1,0 +1,65 @@
+{
+  "Donor_Master": {
+    "primary_key": "Donor_ID",
+    "foreign_keys": [],
+    "rows": 3500,
+    "columns": {
+      "Donor_ID": "str",
+      "Gender": "str",
+      "Age": "int64",
+      "Blood_Group": "str",
+      "Registration_Date": "datetime64[us]",
+      "Donation_Frequency": "str",
+      "Last_Donation_Date": "datetime64[us]",
+      "Donor_Status": "str"
+    }
+  },
+  "Donation_Register": {
+    "primary_key": "Donation_ID",
+    "foreign_keys": [
+      "Donor_ID -> Donor_Master.Donor_ID"
+    ],
+    "rows": 24195,
+    "columns": {
+      "Donation_ID": "str",
+      "Donation_Date": "datetime64[us]",
+      "Donor_ID": "str",
+      "Blood_Group": "str",
+      "Units_Collected": "int64",
+      "Donation_Type": "str",
+      "Collection_Source": "str",
+      "Camp_ID": "str"
+    }
+  },
+  "quality_report": {
+    "donor_rows": 3500,
+    "donation_rows": 24195,
+    "duplicate_donations": 0,
+    "orphan_donation_donor_ids": 0,
+    "donors_without_donations": 34,
+    "donor_null_counts": {
+      "Donor_ID": 0,
+      "Gender": 0,
+      "Age": 0,
+      "Blood_Group": 0,
+      "Registration_Date": 0,
+      "Donation_Frequency": 0,
+      "Last_Donation_Date": 0,
+      "Donor_Status": 0
+    },
+    "donation_null_counts": {
+      "Donation_ID": 0,
+      "Donation_Date": 0,
+      "Donor_ID": 0,
+      "Blood_Group": 0,
+      "Units_Collected": 0,
+      "Donation_Type": 0,
+      "Collection_Source": 0,
+      "Camp_ID": 10759
+    },
+    "donation_date_range": [
+      "2023-01-02 00:00:00",
+      "2025-12-31 00:00:00"
+    ]
+  }
+}

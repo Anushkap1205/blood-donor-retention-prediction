@@ -1,0 +1,20 @@
+{
+  "dataset_rows": 24195,
+  "labeled_retention_rows": 20714,
+  "labeled_churn_rows": 17294,
+  "best_models": {
+    "retained_180": "random_forest",
+    "churn_365": "random_forest"
+  },
+  "retention_180_best_metrics": {
+    "roc_auc": 0.605,
+    "recall": 0.761,
+    "f1": 0.758,
+    "pr_auc": 0.758
+  },
+  "churn_365_best_metrics": {
+    "roc_auc": 0.680,
+    "recall": 0.518,
+    "f1": 0.287
+  }
+}

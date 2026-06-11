@@ -1,0 +1,122 @@
+[
+  {
+    "feature": "num__walkin_donation_count",
+    "mean_abs_shap": 0.061013758467022235
+  },
+  {
+    "feature": "num__walkin_ratio",
+    "mean_abs_shap": 0.04627970562789313
+  },
+  {
+    "feature": "num__camp_ratio",
+    "mean_abs_shap": 0.042570165389907724
+  },
+  {
+    "feature": "num__years_as_donor",
+    "mean_abs_shap": 0.01197070043384469
+  },
+  {
+    "feature": "num__tenure_days",
+    "mean_abs_shap": 0.011681368815548081
+  },
+  {
+    "feature": "num__avg_gap_days",
+    "mean_abs_shap": 0.010645246072500933
+  },
+  {
+    "feature": "num__days_since_last_donation",
+    "mean_abs_shap": 0.010464016676159904
+  },
+  {
+    "feature": "num__Age",
+    "mean_abs_shap": 0.010293102478791403
+  },
+  {
+    "feature": "num__donation_velocity",
+    "mean_abs_shap": 0.010139486889255448
+  },
+  {
+    "feature": "num__max_gap_days",
+    "mean_abs_shap": 0.010043322876868946
+  },
+  {
+    "feature": "num__min_gap_days",
+    "mean_abs_shap": 0.009483657027304736
+  },
+  {
+    "feature": "num__days_since_registration",
+    "mean_abs_shap": 0.009384507243618237
+  },
+  {
+    "feature": "num__total_donations",
+    "mean_abs_shap": 0.008415413970538677
+  },
+  {
+    "feature": "num__total_units_donated",
+    "mean_abs_shap": 0.008223660317333667
+  },
+  {
+    "feature": "num__std_gap_days",
+    "mean_abs_shap": 0.00787795772929525
+  },
+  {
+    "feature": "num__camp_donation_count",
+    "mean_abs_shap": 0.006765862475211482
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Occasional (1-2/year)",
+    "mean_abs_shap": 0.006508063053578414
+  },
+  {
+    "feature": "num__recent_activity_score",
+    "mean_abs_shap": 0.0051291490966451
+  },
+  {
+    "feature": "num__donations_last_12_months",
+    "mean_abs_shap": 0.004473780774298727
+  },
+  {
+    "feature": "num__donations_last_6_months",
+    "mean_abs_shap": 0.0038424229826872947
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Rare (once)",
+    "mean_abs_shap": 0.003316795246698684
+  },
+  {
+    "feature": "cat__Donation_Frequency_Label_Regular (3-4/year)",
+    "mean_abs_shap": 0.0032277215839249954
+  },
+  {
+    "feature": "cat__Gender_Female",
+    "mean_abs_shap": 0.002662419087599783
+  },
+  {
+    "feature": "num__donation_type_whole_blood_share",
+    "mean_abs_shap": 0.002566761388963866
+  },
+  {
+    "feature": "cat__Gender_Male",
+    "mean_abs_shap": 0.002540806393835074
+  },
+  {
+    "feature": "num__donations_last_3_months",
+    "mean_abs_shap": 0.0023767125574019874
+  },
+  {
+    "feature": "cat__Blood_Group_B+",
+    "mean_abs_shap": 0.001969298495142489
+  },
+  {
+    "feature": "cat__Blood_Group_O+",
+    "mean_abs_shap": 0.0019141364695226956
+  },
+  {
+    "feature": "num__is_first_donation",
+    "mean_abs_shap": 0.0019140963252710682
+  },
+  {
+    "feature": "cat__Blood_Group_A+",
+    "mean_abs_shap": 0.0016327113248051008
+  }
+]
