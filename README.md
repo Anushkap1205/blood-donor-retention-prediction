@@ -86,7 +86,7 @@ python scripts/run_pipeline.py
 
 | Problem (Base Rate) | Champion Model | test ROC-AUC | test PR-AUC | Brier Score | Path |
 |---------|----------------|--------------|-------------|-------------|------|
-| 180-day retention (70.11%) | **Logistic Regression** | **0.6130** | **0.7622** | 0.2370 | `outputs/models/retained_180_logistic_regression.joblib` |
+| 180-day retention (70.11%) | **Logistic Regression** | **0.6160** | **0.7635** | 0.2367 | `outputs/models/retained_180_logistic_regression.joblib` |
 | 365-day churn (10.22%) | **CatBoost** | **0.7007** | **0.1880** | 0.2217 | `outputs/models/churn_365_catboost.joblib` |
 
 For full splits, parameter search grids, metrics, and calibration curves, see [model_card.md](file:///Users/anushkapatil/Projects/blood-donor-retention-prediction/reports/model_card.md).

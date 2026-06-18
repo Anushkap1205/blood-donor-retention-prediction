@@ -182,29 +182,37 @@ def train_all_models(
                 ]
             )
 
-        # Hyperparameter tuning for boosting models
+        # Hyperparameter tuning for all models to ensure fair champion comparison
         tuned_pipeline = pipeline
-        if model_name in {"xgboost", "lightgbm", "catboost"}:
-            from sklearn.model_selection import RandomizedSearchCV
-            param_grids = {
-                "xgboost": {
-                    "model__n_estimators": [100, 200, 300],
-                    "model__max_depth": [3, 5, 7],
-                    "model__learning_rate": [0.01, 0.05, 0.1],
-                    "model__subsample": [0.7, 0.9, 1.0],
-                },
-                "lightgbm": {
-                    "model__n_estimators": [100, 200, 300],
-                    "model__max_depth": [3, 5, -1],
-                    "model__learning_rate": [0.01, 0.05, 0.1],
-                    "model__subsample": [0.7, 0.9, 1.0],
-                },
-                "catboost": {
-                    "model__iterations": [100, 200, 300],
-                    "model__depth": [4, 6, 8],
-                    "model__learning_rate": [0.01, 0.05, 0.1],
-                }
+        from sklearn.model_selection import RandomizedSearchCV
+        param_grids = {
+            "logistic_regression": {
+                "model__C": [0.01, 0.1, 1.0, 10.0, 100.0],
+            },
+            "random_forest": {
+                "model__n_estimators": [100, 200, 300],
+                "model__max_depth": [5, 10, 15, None],
+                "model__min_samples_split": [2, 5, 10],
+            },
+            "xgboost": {
+                "model__n_estimators": [100, 200, 300],
+                "model__max_depth": [3, 5, 7],
+                "model__learning_rate": [0.01, 0.05, 0.1],
+                "model__subsample": [0.7, 0.9, 1.0],
+            },
+            "lightgbm": {
+                "model__n_estimators": [100, 200, 300],
+                "model__max_depth": [3, 5, -1],
+                "model__learning_rate": [0.01, 0.05, 0.1],
+                "model__subsample": [0.7, 0.9, 1.0],
+            },
+            "catboost": {
+                "model__iterations": [100, 200, 300],
+                "model__depth": [4, 6, 8],
+                "model__learning_rate": [0.01, 0.05, 0.1],
             }
+        }
+        if model_name in param_grids:
             search = RandomizedSearchCV(
                 pipeline,
                 param_distributions=param_grids[model_name],
@@ -216,6 +224,7 @@ def train_all_models(
             )
             search.fit(x_train, y_train, groups=groups_train)
             tuned_pipeline = search.best_estimator_
+
 
         cv_scores = cross_validate(
             tuned_pipeline,

@@ -66,6 +66,17 @@ INTERVENTION_LIBRARY = [
 
 
 def risk_category(probability: float) -> str:
+    """
+    Determine risk tier based on calibrated 180-day return probability.
+    
+    Threshold Rationale:
+    - High Retention (prob >= 0.80): Identifies the top 30% of secure, habituated donors
+      ideal for milestone recognition.
+    - Medium Risk (0.50 <= prob < 0.80): Below-average return chance (base rate ~70.11%),
+      targeted with soft, channel-preferred invites.
+    - High Churn Risk (prob < 0.50): Crucial drop below 50% chance of return, requiring
+      direct intervention alerts.
+    """
     if probability >= 0.80:
         return "High Retention"
     if probability >= 0.50:
@@ -74,40 +85,77 @@ def risk_category(probability: float) -> str:
 
 
 def recommend_interventions(row: pd.Series) -> list[str]:
-    """Return ranked interventions for a donor snapshot."""
-    recommendations: list[tuple[int, str]] = []
-    probability = row.get("retention_probability", 0.5)
+    """
+    Return a ranked, mutually exclusive list of interventions for a donor.
+    
+    Rule Precedence Order (Single Campaign Contact Policy):
+    To prevent communication fatigue, each donor is assigned exactly one primary action:
+    1. First-Time Donor Cold Start -> Counsel/Follow-up (Bypasses predictive models entirely)
+    2. Long-Term Lapsed -> Reactivation Phone Call (Bypasses SMS to avoid redundant channels)
+    3. High Churn Risk (Recent) -> Altruistic SMS (Merged with Camp details if camp-oriented)
+    4. Sub-optimal Female Donor -> Deferral-Aware Iron/Scheduling SMS
+    5. Camp-Oriented Donor -> Geocoded Camp Notification
+    6. Loyal Veteran -> Appreciation Certificate
+    7. Medium Risk -> Standard Invite
+    """
+    is_first = row.get("is_first_donation", 0) == 1
+    if is_first:
+        # COLD-START ROUTE: Bypass model scoring. Route directly to counseling.
+        return ["Post-donation counseling and thank-you follow-up"]
 
-    if probability < 0.50:
-        recommendations.append((1, "SMS reminder with altruistic appeal"))
-        if row.get("days_since_last_donation", 0) > 365:
-            recommendations.append((2, "Personalized phone outreach"))
-    elif probability < 0.80:
-        recommendations.append((3, "Personalized donation invitation"))
+    days_inactive = row.get("days_since_last_donation", 0)
+    churn_prob = row.get("churn_probability", 0.0)
+    ret_prob = row.get("retention_probability", 1.0)
+    gender = row.get("Gender", "Male")
+    camp_ratio = row.get("camp_ratio", 0.0)
+    total_donations = row.get("total_donations", 0)
 
-    if row.get("camp_ratio", 0) >= 0.60:
-        recommendations.append((3, "Notify about nearby donation camps"))
+    # 1. PRIORITY 1: Long-Term Reactivation Call (Inactive > 365 Days)
+    # Trigger: Churn probability >= 0.50 (Nearly 5x the 10.22% churn base rate)
+    if churn_prob >= 0.50 and days_inactive > 365:
+        return ["Personalized phone outreach"]
 
-    if row.get("is_first_donation", 0) == 1:
-        recommendations.append((1, "Post-donation counseling and thank-you follow-up"))
+    # 2. PRIORITY 2: Altruistic Churn SMS (Active but High Risk)
+    # Trigger: Churn probability >= 0.50
+    if churn_prob >= 0.50:
+        # If donor is camp-oriented, adapt the SMS context rather than sending two notifications
+        if camp_ratio >= 0.60:
+            return ["Altruistic SMS reminder with camp-location matching"]
+        return ["SMS reminder with altruistic appeal"]
 
-    if row.get("total_donations", 0) >= 5 and probability >= 0.80:
-        recommendations.append((4, "Recognition certificate and loyalty appreciation"))
+    # 3. PRIORITY 3: Deferral-Aware iron/scheduling SMS
+    # Trigger: Gender == 'Female' and retention_prob < 0.70
+    # Reframing Protected Attribute: Gender is used here temporarily as a proxy for physical
+    # deferral risk (specifically anemia as per Marwaha 2012) due to database constraints in V2.
+    # ROADMAP: Replace with a dedicated deferral-risk classifier once clinical logs are available.
+    if gender == "Female" and ret_prob < 0.70:
+        return ["Deferral-aware SMS with flexible scheduling"]
 
-    if row.get("Gender") == "Female" and probability < 0.70:
-        recommendations.append((3, "Deferral-aware SMS with flexible scheduling"))
+    # 4. PRIORITY 4: Camp-Targeted notifications (Non-high-risk camp-goers)
+    if camp_ratio >= 0.60:
+        return ["Notify about nearby donation camps"]
 
-    if not recommendations:
-        recommendations.append((5, "Maintain standard engagement cadence"))
+    # 5. PRIORITY 5: Milestone Appreciation for Veteran Cohorts
+    if total_donations >= 5 and ret_prob >= 0.80:
+        return ["Recognition certificate and loyalty appreciation"]
 
-    recommendations.sort(key=lambda item: item[0])
-    return [text for _, text in recommendations]
+    # 6. PRIORITY 6: Personalized Donation Invitation for Medium-Risk Donors
+    if ret_prob < 0.80:
+        return ["Personalized donation invitation"]
+
+    # 7. DEFAULT: Standard cadence
+    return ["Maintain standard engagement cadence"]
 
 
 def build_action_plan(scored_donors: pd.DataFrame) -> pd.DataFrame:
     """Attach risk categories and intervention lists to scored donors."""
     plan = scored_donors.copy()
     plan["risk_category"] = plan["retention_probability"].map(risk_category)
+    
+    # Override risk category for first-time cold starts
+    if "is_first_donation" in plan.columns:
+        plan.loc[plan["is_first_donation"] == 1, "risk_category"] = "First-Time Cold Start"
+        
     plan["recommended_interventions"] = plan.apply(recommend_interventions, axis=1)
     return plan
 
@@ -115,3 +163,4 @@ def build_action_plan(scored_donors: pd.DataFrame) -> pd.DataFrame:
 def intervention_ranking() -> pd.DataFrame:
     """Static intervention ranking table for reporting."""
     return pd.DataFrame(INTERVENTION_LIBRARY).sort_values("priority")
+

@@ -1,113 +1,103 @@
 [
   {
-    "feature": "num__recent_activity_score",
-    "importance_mean": 0.05936039360393599,
-    "importance_std": 0.0033078870599284257
-  },
-  {
-    "feature": "num__donations_last_6_months",
-    "importance_mean": 0.03544895448954485,
-    "importance_std": 0.0032773769485549276
+    "feature": "num__camp_ratio",
+    "importance_mean": 0.031906519065190694,
+    "importance_std": 0.004129691882622178
   },
   {
     "feature": "num__walkin_ratio",
-    "importance_mean": 0.034095940959409564,
-    "importance_std": 0.0027749251960056042
+    "importance_mean": 0.031906519065190694,
+    "importance_std": 0.004129691882622178
   },
   {
-    "feature": "num__camp_ratio",
-    "importance_mean": 0.034095940959409564,
-    "importance_std": 0.0027749251960056042
+    "feature": "num__recent_activity_score",
+    "importance_mean": 0.03131611316113166,
+    "importance_std": 0.0029191485723949703
   },
   {
-    "feature": "num__max_gap_days",
-    "importance_mean": 0.017785977859778555,
-    "importance_std": 0.0026290056281264734
-  },
-  {
-    "feature": "num__avg_gap_days",
-    "importance_mean": 0.016654366543665387,
-    "importance_std": 0.004623341201289366
-  },
-  {
-    "feature": "num__std_gap_days",
-    "importance_mean": 0.01662976629766292,
-    "importance_std": 0.003090636905198412
-  },
-  {
-    "feature": "num__Age",
-    "importance_mean": 0.01635916359163587,
-    "importance_std": 0.0038962471961268255
-  },
-  {
-    "feature": "num__min_gap_days",
-    "importance_mean": 0.01035670356703563,
-    "importance_std": 0.002258538390066249
-  },
-  {
-    "feature": "cat__age_group_46-60",
-    "importance_mean": 0.0041820418204181475,
-    "importance_std": 0.0016684698605473989
-  },
-  {
-    "feature": "num__walkin_donation_count",
-    "importance_mean": 0.004108241082410769,
-    "importance_std": 0.0016902714279263618
-  },
-  {
-    "feature": "cat__age_group_18-25",
-    "importance_mean": 0.0013284132841328122,
-    "importance_std": 0.0016872254070831227
-  },
-  {
-    "feature": "cat__Blood_Group_O+",
-    "importance_mean": 0.0013038130381303526,
-    "importance_std": 0.0015599349434182268
+    "feature": "num__donations_last_6_months",
+    "importance_mean": 0.01594095940959417,
+    "importance_std": 0.001979670311314235
   },
   {
     "feature": "num__donations_last_12_months",
-    "importance_mean": 0.0010824108241082153,
-    "importance_std": 0.002005184144877225
+    "importance_mean": 0.006592865928659319,
+    "importance_std": 0.002307183092288963
   },
   {
-    "feature": "num__tenure_days",
-    "importance_mean": 0.0007872078720787101,
-    "importance_std": 0.0009827790580781259
+    "feature": "num__Age",
+    "importance_mean": 0.002140221402214082,
+    "importance_std": 0.0017843235233248314
   },
   {
-    "feature": "num__years_as_donor",
-    "importance_mean": 0.0007872078720787101,
-    "importance_std": 0.0009827790580781259
+    "feature": "num__walkin_donation_count",
+    "importance_mean": 0.0017712177121771977,
+    "importance_std": 0.0009641288040475039
   },
   {
-    "feature": "cat__Blood_Group_B+",
-    "importance_mean": 0.0006396063960639409,
-    "importance_std": 0.0014809266364863359
-  },
-  {
-    "feature": "cat__Blood_Group_A+",
-    "importance_mean": 0.00044280442804427443,
-    "importance_std": 0.0009386855610498723
-  },
-  {
-    "feature": "cat__age_group_26-35",
-    "importance_mean": 0.00036900369003689537,
-    "importance_std": 0.0004434872417544822
+    "feature": "num__avg_gap_days",
+    "importance_mean": 0.0013530135301353607,
+    "importance_std": 0.0009793864323441542
   },
   {
     "feature": "cat__Gender_Male",
-    "importance_mean": 0.0002706027060270566,
-    "importance_std": 0.0007736376478974748
+    "importance_mean": 0.0010824108241083152,
+    "importance_std": 0.0006242842578327204
   },
   {
-    "feature": "cat__Blood_Group_B-",
-    "importance_mean": 0.00017220172201721785,
-    "importance_std": 0.00036570894827351306
+    "feature": "num__donations_last_3_months",
+    "importance_mean": 0.001008610086100925,
+    "importance_std": 0.0012756597453839546
+  },
+  {
+    "feature": "num__donation_velocity",
+    "importance_mean": 0.0009594095940959946,
+    "importance_std": 0.0010748365202929442
+  },
+  {
+    "feature": "cat__Blood_Group_O+",
+    "importance_mean": 0.0009594095940959835,
+    "importance_std": 0.0016952764727203248
+  },
+  {
+    "feature": "num__std_gap_days",
+    "importance_mean": 0.0006888068880689602,
+    "importance_std": 0.0007445385461462271
+  },
+  {
+    "feature": "num__max_gap_days",
+    "importance_mean": 0.000688806888068949,
+    "importance_std": 0.0013100641530818815
+  },
+  {
+    "feature": "num__days_since_registration",
+    "importance_mean": 0.0005658056580566506,
+    "importance_std": 0.0007048732488017214
+  },
+  {
+    "feature": "cat__age_group_18-25",
+    "importance_mean": 0.00046740467404681184,
+    "importance_std": 0.000636286206955883
+  },
+  {
+    "feature": "cat__age_group_46-60",
+    "importance_mean": 0.00046740467404680073,
+    "importance_std": 0.00030028427098979674
+  },
+  {
+    "feature": "num__is_first_donation",
+    "importance_mean": 0.00039360393603941055,
+    "importance_std": 0.00035136179230227306
   },
   {
     "feature": "cat__Blood_Group_O-",
-    "importance_mean": 0.00014760147601475815,
-    "importance_std": 0.0002254649788416127
+    "importance_mean": 0.0002706027060270677,
+    "importance_std": 7.380073800741238e-05
+  },
+  {
+    "feature": "cat__Blood_Group_AB+",
+    "importance_mean": 0.00022140221402218164,
+    "importance_std": 0.00044620804790205165
   },
   {
     "feature": "num__average_units_per_donation",
@@ -120,33 +110,43 @@
     "importance_std": 0.0
   },
   {
-    "feature": "num__donation_velocity",
-    "importance_mean": -2.4600246002481896e-05,
-    "importance_std": 0.0010229088750943274
+    "feature": "cat__Blood_Group_A+",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
   },
   {
-    "feature": "num__days_since_last_donation",
-    "importance_mean": -0.00014760147601479147,
-    "importance_std": 0.0017643710776916383
+    "feature": "num__min_gap_days",
+    "importance_mean": -2.4600246002415282e-05,
+    "importance_std": 0.0009682001797862232
   },
   {
     "feature": "cat__Blood_Group_A-",
-    "importance_mean": -0.00017220172201721785,
-    "importance_std": 0.0002921117364584934
+    "importance_mean": -2.460024600245969e-05,
+    "importance_std": 7.380073800737908e-05
+  },
+  {
+    "feature": "cat__Gender_Female",
+    "importance_mean": -4.920049200491938e-05,
+    "importance_std": 9.840098400983876e-05
   },
   {
     "feature": "num__donation_type_whole_blood_share",
-    "importance_mean": -0.00017220172201721785,
-    "importance_std": 0.0002472294125736963
+    "importance_mean": -9.840098400983876e-05,
+    "importance_std": 0.00019680196801967755
   },
   {
-    "feature": "num__donations_last_3_months",
-    "importance_mean": -0.00017220172201722894,
-    "importance_std": 0.0014638696725030114
+    "feature": "cat__Blood_Group_B+",
+    "importance_mean": -0.00012300123001224295,
+    "importance_std": 0.0009415822489055523
   },
   {
-    "feature": "num__total_units_donated",
-    "importance_mean": -0.0003444034440344579,
-    "importance_std": 0.0018644325039602913
+    "feature": "cat__Blood_Group_B-",
+    "importance_mean": -0.00012300123001229846,
+    "importance_std": 0.00019833352394338106
+  },
+  {
+    "feature": "cat__age_group_26-35",
+    "importance_mean": -0.0002214022140221039,
+    "importance_std": 0.0007498032302154297
   }
 ]

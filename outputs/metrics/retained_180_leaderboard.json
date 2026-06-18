@@ -1,16 +1,16 @@
 [
   {
     "model": "logistic_regression",
-    "roc_auc": 0.613027795827016,
-    "f1": 0.7228017883755589,
-    "recall": 0.6807017543859649,
+    "roc_auc": 0.615987004548408,
+    "f1": 0.7239515377446412,
+    "recall": 0.6814035087719298,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_logistic_regression.joblib"
   },
   {
     "model": "random_forest",
-    "roc_auc": 0.6121530575409717,
-    "f1": 0.7702513966480447,
-    "recall": 0.7740350877192983,
+    "roc_auc": 0.6129853440184825,
+    "f1": 0.7681515257804279,
+    "recall": 0.7684210526315789,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_random_forest.joblib"
   },
   {
