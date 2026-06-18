@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarpan Blood Bank — Retention Dashboard</title>
+    <!-- Google Fonts Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="app-header">
+        <div class="header-logo">
+            <i class="fa-solid fa-droplet droplet-icon animate-pulse"></i>
+            <div class="logo-text">
+                <h1>SAMARPAN</h1>
+                <span>DONOR RETENTION SYSTEM</span>
+            </div>
+        </div>
+        
+        <div class="header-badge-group">
+            <span class="badge status-live">
+                <i class="fa-solid fa-circle-check"></i> ML Pipeline Active
+            </span>
+            <span class="badge timestamp" id="current-timestamp">
+                <i class="fa-solid fa-clock"></i> Scored: June 18, 2026
+            </span>
+        </div>
+    </header>
+
+    <div class="app-container">
+        
+        <!-- Navigation Sidebar -->
+        <nav class="app-sidebar">
+            <ul class="nav-links">
+                <li class="nav-item active" data-tab="dashboard">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard Overview</span>
+                </li>
+                <li class="nav-item" data-tab="interventions">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Campaign Playbook</span>
+                </li>
+                <li class="nav-item" data-tab="leaderboard">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Model Calibration</span>
+                </li>
+                <li class="nav-item" data-tab="directory">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span>Donor Directory</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="app-content">
+
+            <!-- Tab: Dashboard Overview -->
+            <section class="tab-content active" id="tab-dashboard">
+                <div class="section-title">
+                    <h2>Executive Summary</h2>
+                    <p>High-level metrics and health indicator cards for the active donor cohort.</p>
+                </div>
+
+                <!-- KPI Cards Grid -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon bg-red-trans">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Active Scored Cohort</span>
+                            <h3 class="kpi-val" id="kpi-total-donors">-</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card">
+                        <div class="kpi-icon bg-green-trans">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">Avg Return Probability</span>
+                            <h3 class="kpi-val" id="kpi-avg-retention">-</h3>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon bg-orange-trans">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">High Churn Risk Cohort</span>
+                            <h3 class="kpi-val" id="kpi-high-risk">-</h3>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon bg-blue-trans">
+                            <i class="fa-solid fa-vial-virus"></i>
+                        </div>
+                        <div class="kpi-info">
+                            <span class="kpi-label">First-Time Cold Starts</span>
+                            <h3 class="kpi-val" id="kpi-first-time">-</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Overview Layout -->
+                <div class="dashboard-panels">
+                    <div class="panel main-chart-panel">
+                        <div class="panel-header">
+                            <h3>Active Intervention Breakdown</h3>
+                            <span class="badge border-badge">Mutually Exclusive Actions</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="campaignDistributionChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="panel side-kpi-panel">
+                        <div class="panel-header">
+                            <h3>A/B Experiment Cohorts</h3>
+                        </div>
+                        <div class="ab-group-visual">
+                            <div class="ab-track-bar">
+                                <div class="ab-fill treatment-fill" style="width: 90%;">Treatment Group (90%)</div>
+                                <div class="ab-fill control-fill" style="width: 10%;">Control (10%)</div>
+                            </div>
+                            <div class="ab-split-stats">
+                                <div class="ab-stat-box">
+                                    <span class="circle-dot color-treatment"></span>
+                                    <h4>Treatment Group</h4>
+                                    <p id="ab-treatment-count">- donors</p>
+                                    <small>Receives personalized predictive campaigns</small>
+                                </div>
+                                <div class="ab-stat-box">
+                                    <span class="circle-dot color-control"></span>
+                                    <h4>Control Group</h4>
+                                    <p id="ab-control-count">- donors</p>
+                                    <small>Receives standard scheduled contact</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer-info">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>The group split and assignment dates are locked inside a persistent database ledger to guarantee a valid 90-day experiment conversion review.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab: Campaign Playbook -->
+            <section class="tab-content" id="tab-interventions">
+                <div class="section-title">
+                    <h2>Intervention Playbook</h2>
+                    <p>Evidence-ranked retention strategies mapped directly to predictions and donor behaviors.</p>
+                </div>
+
+                <div class="playbook-layout">
+                    <!-- Right Details Column -->
+                    <div class="panel full-width-panel">
+                        <div class="panel-header">
+                            <h3>Strategy Matrix</h3>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Priority</th>
+                                        <th>Target Segment</th>
+                                        <th>Intervention Action</th>
+                                        <th>Scientific Evidence</th>
+                                        <th>Impact Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="priority-badge priority-1">1</span></td>
+                                        <td><strong>First-Time Cold Starts</strong></td>
+                                        <td>Post-donation counseling & thank-you follow-up within 7 days</td>
+                                        <td>Bagot et al. (2016); Masser et al. (2012)</td>
+                                        <td><span class="badge impact-high">High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="priority-badge priority-1">1</span></td>
+                                        <td><strong>High Churn Risk (Recent)</strong></td>
+                                        <td>SMS Altruistic reminders</td>
+                                        <td>Yang et al. (2020); Mohammed et al. (2025)</td>
+                                        <td><span class="badge impact-high">High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="priority-badge priority-2">2</span></td>
+                                        <td><strong>Long-Term Lapsed (>12M)</strong></td>
+                                        <td>Personalized phone outreach campaign</td>
+                                        <td>Yang et al. (2020) RCT Study</td>
+                                        <td><span class="badge impact-high">High</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="priority-badge priority-3">3</span></td>
+                                        <td><strong>Sub-optimal Female Donors</strong></td>
+                                        <td>Deferral-aware SMS with hemoglobin guidance</td>
+                                        <td>Marwaha et al. (2012); Sachdeva et al. (2023)</td>
+                                        <td><span class="badge impact-med">Medium</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="priority-badge priority-3">3</span></td>
+                                        <td><strong>Camp-Oriented Donors</strong></td>
+                                        <td>Notify about nearby donation camps (Geocoded)</td>
+                                        <td>Srivastava et al. (2025) (India camps)</td>
+                                        <td><span class="badge impact-med">Medium</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="priority-badge priority-4">4</span></td>
+                                        <td><strong>Loyal Veteran Cohorts</strong></td>
+                                        <td>Recognition certificate & loyalty celebration</td>
+                                        <td>Malhotra et al. (2026, North India)</td>
+                                        <td><span class="badge impact-low">Low-Med</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab: Model Calibration -->
+            <section class="tab-content" id="tab-leaderboard">
+                <div class="section-title">
+                    <h2>Model Calibration & Validation</h2>
+                    <p>Comparison of tuned models under 5-fold StratifiedGroupKFold cross-validation.</p>
+                </div>
+
+                <div class="model-cards-grid">
+                    <!-- 180-Day Retention Card -->
+                    <div class="panel model-panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>180-Day Retention Model</h3>
+                                <small>Champion: Tuned Logistic Regression</small>
+                            </div>
+                            <span class="badge winner-badge">Winner Selected</span>
+                        </div>
+                        <div class="model-meta-row">
+                            <div class="meta-item">
+                                <span class="meta-label">Base Rate</span>
+                                <span class="meta-val">70.11%</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Naive Brier</span>
+                                <span class="meta-val">0.2096</span>
+                            </div>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="data-table compact" id="table-leaderboard-180">
+                                <thead>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>ROC-AUC</th>
+                                        <th>PR-AUC</th>
+                                        <th>Brier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 365-Day Churn Card -->
+                    <div class="panel model-panel">
+                        <div class="panel-header">
+                            <div>
+                                <h3>365-Day Churn Model</h3>
+                                <small>Champion: Tuned CatBoost Classifier</small>
+                            </div>
+                            <span class="badge winner-badge">Winner Selected</span>
+                        </div>
+                        <div class="model-meta-row">
+                            <div class="meta-item">
+                                <span class="meta-label">Base Rate</span>
+                                <span class="meta-val">10.22%</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Naive Brier</span>
+                                <span class="meta-val">0.0917</span>
+                            </div>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="data-table compact" id="table-leaderboard-365">
+                                <thead>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>ROC-AUC</th>
+                                        <th>PR-AUC</th>
+                                        <th>Brier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calibration Explanation Alert -->
+                <div class="alert-box">
+                    <i class="fa-solid fa-graduation-cap alert-icon"></i>
+                    <div class="alert-text">
+                        <h4>Calibration & Brier Score Analysis</h4>
+                        <p>
+                            Brier score baseline measures the squared probability error. For 180-day retention, our model's Brier score of 0.2367 is slightly above the naive base rate baseline of 0.2096. This occurs because the time interval of donor returns in a synthetic dataset contains high variance. However, the <strong>0.6160 ROC-AUC</strong> demonstrates the model successfully splits and prioritizes returning donors. For 365-day churn, the <strong>0.7007 ROC-AUC</strong> demonstrates solid, strong discrimination signals, making it highly effective for targeted reactivation outreach.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab: Donor Directory -->
+            <section class="tab-content" id="tab-directory">
+                <div class="section-title">
+                    <h2>Donor Command Center</h2>
+                    <p>Search active scored donors, filter by risk tiers or intervention channels, and export outreach lists.</p>
+                </div>
+
+                <!-- Directory Search & Filters Panel -->
+                <div class="panel filter-panel">
+                    <div class="filter-inputs">
+                        <div class="input-group search-group">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" id="search-donor-id" placeholder="Search by Donor ID (e.g. DON01099)...">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="filter-risk">Risk Category</label>
+                            <select id="filter-risk">
+                                <option value="">All Tiers</option>
+                                <option value="First-Time Cold Start">First-Time Cold Start</option>
+                                <option value="High Churn Risk">High Churn Risk</option>
+                                <option value="Medium Risk">Medium Risk</option>
+                                <option value="High Retention">High Retention</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="filter-intervention">Recommended Campaign</label>
+                            <select id="filter-intervention">
+                                <option value="">All Interventions</option>
+                                <option value="Post-donation counseling and thank-you follow-up">First-Time Counseling</option>
+                                <option value="Personalized phone outreach">Reactivation Phone Call</option>
+                                <option value="SMS reminder with altruistic appeal">Altruistic SMS Appeal</option>
+                                <option value="Altruistic SMS reminder with camp-location matching">Altruistic Camp SMS</option>
+                                <option value="Deferral-aware SMS with flexible scheduling">Female Iron/Schedule SMS</option>
+                                <option value="Notify about nearby donation camps">Camp Notification</option>
+                                <option value="Recognition certificate and loyalty appreciation">Appreciation Campaign</option>
+                                <option value="Personalized donation invitation">Standard Invitation</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="filter-group">A/B Test Group</label>
+                            <select id="filter-group">
+                                <option value="">All Groups</option>
+                                <option value="Treatment">Treatment (90%)</option>
+                                <option value="Control">Control (10%)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-actions">
+                        <button class="btn btn-secondary" id="btn-reset-filters">
+                            <i class="fa-solid fa-arrow-rotate-left"></i> Reset
+                        </button>
+                        <button class="btn btn-primary" id="btn-export-csv">
+                            <i class="fa-solid fa-file-export"></i> Export Campaign List
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Directory Table Panel -->
+                <div class="panel table-panel">
+                    <div class="panel-header">
+                        <h3>Scored Donor List</h3>
+                        <span class="badge count-badge" id="directory-record-count">Showing 0 of 0 donors</span>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="data-table" id="donor-directory-table">
+                            <thead>
+                                <tr>
+                                    <th>Donor ID</th>
+                                    <th>Gender</th>
+                                    <th>Age</th>
+                                    <th>P(Retention 180)</th>
+                                    <th>P(Churn 365)</th>
+                                    <th>Risk Category</th>
+                                    <th>Target Campaign</th>
+                                    <th>A/B Group</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Loaded dynamically via app.js -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination Controls -->
+                    <div class="pagination-container">
+                        <button class="btn-page" id="btn-page-prev" disabled>
+                            <i class="fa-solid fa-chevron-left"></i> Previous
+                        </button>
+                        <span class="page-indicator" id="page-num-display">Page 1 of 1</span>
+                        <button class="btn-page" id="btn-page-next" disabled>
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Load Local Compiled Data & App Script -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

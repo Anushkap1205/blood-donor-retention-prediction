@@ -198,6 +198,15 @@ def main() -> None:
     with open(METRICS_DIR / "pipeline_summary.json", "w", encoding="utf-8") as handle:
         json.dump(summary, handle, indent=2, default=str)
 
+    # Compile dashboard data
+    try:
+        import sys
+        sys.path.append(str(PROJECT_ROOT))
+        from scripts.generate_dashboard_data import main as compile_dashboard
+        compile_dashboard()
+    except Exception as e:
+        print(f"Warning: Failed to compile dashboard data: {e}")
+
     print("Pipeline complete.")
     print(json.dumps(summary, indent=2, default=str))
 
