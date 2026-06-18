@@ -1,37 +1,37 @@
 [
   {
-    "model": "random_forest",
-    "roc_auc": 0.6799106261081825,
-    "f1": 0.2872628726287263,
-    "recall": 0.5179153094462541,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_random_forest.joblib"
-  },
-  {
-    "model": "xgboost",
-    "roc_auc": 0.6779285990745212,
-    "f1": 0.006369426751592357,
-    "recall": 0.003257328990228013,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_xgboost.joblib"
-  },
-  {
     "model": "catboost",
-    "roc_auc": 0.674953845943067,
-    "f1": 0.29864972200158857,
-    "recall": 0.6123778501628665,
+    "roc_auc": 0.700671122062083,
+    "f1": 0.32262996941896027,
+    "recall": 0.6635220125786163,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_catboost.joblib"
   },
   {
-    "model": "lightgbm",
-    "roc_auc": 0.6745000119880667,
-    "f1": 0.2728110599078341,
-    "recall": 0.4820846905537459,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_lightgbm.joblib"
+    "model": "logistic_regression",
+    "roc_auc": 0.6988163949550522,
+    "f1": 0.3005390835579515,
+    "recall": 0.7012578616352201,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_logistic_regression.joblib"
   },
   {
-    "model": "logistic_regression",
-    "roc_auc": 0.6706489882642535,
-    "f1": 0.27903780068728523,
-    "recall": 0.6612377850162866,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_logistic_regression.joblib"
+    "model": "xgboost",
+    "roc_auc": 0.6945488912140952,
+    "f1": 0.32228218966846567,
+    "recall": 0.6572327044025157,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_xgboost.joblib"
+  },
+  {
+    "model": "random_forest",
+    "roc_auc": 0.6941472305667128,
+    "f1": 0.2948356807511737,
+    "recall": 0.4937106918238994,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_random_forest.joblib"
+  },
+  {
+    "model": "lightgbm",
+    "roc_auc": 0.686471236822268,
+    "f1": 0.32228218966846567,
+    "recall": 0.6572327044025157,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/churn_365_lightgbm.joblib"
   }
 ]

@@ -161,7 +161,6 @@ def get_feature_columns() -> list[str]:
         "Gender",
         "Blood_Group",
         "age_group",
-        "Donation_Frequency_Label",
     ]
 
 

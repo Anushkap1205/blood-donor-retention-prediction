@@ -1,5 +1,9 @@
 # Data Dictionary — Samarpan Blood Bank Synthetic Dataset V2
 
+> [!WARNING]
+> **Synthetic Dataset Caveat:**
+> This dataset is simulated using synthetic data generator scripts to replicate operational data fields. The correlations and distributions (e.g. RFM characteristics) have been verified to align with typical blood transfusion donation patterns from research literature, but they are not based on actual clinical or physiological donor records. **All models, segmentation strategies, and intervention recommendations are validated only against this synthetic dataset and must undergo validation on real-world donor records before clinical or operational deployment.**
+
 ## Donor_Master
 
 | Column | Type | Description | Keys / Notes |

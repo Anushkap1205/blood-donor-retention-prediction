@@ -80,17 +80,22 @@ def main() -> None:
     for target_name, target_col in targets.items():
         print(f"Training models for {target_name}...")
         x, y = prepare_model_matrix(dataset, target_col)
-        leaderboard = train_all_models(x, y, target_name)
+        groups = dataset.loc[x.index, "Donor_ID"]
+        leaderboard = train_all_models(x, y, target_name, groups=groups)
         best = leaderboard[0]
         best_models[target_name] = best.name
+
 
         comparison = compare_models_statistically(METRICS_DIR, target_name)
         comparison.to_csv(METRICS_DIR / f"{target_name}_comparison.csv", index=False)
         plot_model_comparison(comparison, target_name, FIGURES_DIR)
 
-        x_train, x_test, y_train, y_test = train_test_split(
-            x, y, test_size=TEST_SIZE, random_state=RANDOM_STATE, stratify=y
-        )
+        from sklearn.model_selection import StratifiedGroupKFold
+        sgkf = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+        train_idx, test_idx = next(sgkf.split(x, y, groups))
+        x_train, x_test = x.iloc[train_idx], x.iloc[test_idx]
+        y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
+
         pipeline = joblib.load(best.model_path)
         plot_curves(pipeline, x_test, y_test, target_name, best.name, FIGURES_DIR)
 

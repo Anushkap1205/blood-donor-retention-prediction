@@ -1,20 +1,49 @@
 {
+  "quality_report": {
+    "donor_rows": 3500,
+    "donation_rows": 24195,
+    "duplicate_donations": 0,
+    "orphan_donation_donor_ids": 0,
+    "donors_without_donations": 34,
+    "donor_null_counts": {
+      "Donor_ID": 0,
+      "Gender": 0,
+      "Age": 0,
+      "Blood_Group": 0,
+      "Registration_Date": 0,
+      "Donation_Frequency": 0,
+      "Last_Donation_Date": 0,
+      "Donor_Status": 0
+    },
+    "donation_null_counts": {
+      "Donation_ID": 0,
+      "Donation_Date": 0,
+      "Donor_ID": 0,
+      "Blood_Group": 0,
+      "Units_Collected": 0,
+      "Donation_Type": 0,
+      "Collection_Source": 0,
+      "Camp_ID": 10759
+    },
+    "donation_date_range": [
+      "2023-01-02 00:00:00",
+      "2025-12-31 00:00:00"
+    ]
+  },
   "dataset_rows": 24195,
-  "labeled_retention_rows": 20714,
-  "labeled_churn_rows": 17294,
+  "labeled_retention_rows": 19970,
+  "labeled_churn_rows": 15799,
   "best_models": {
-    "retained_180": "random_forest",
-    "churn_365": "random_forest"
+    "retained_180": "logistic_regression",
+    "churn_365": "catboost"
   },
-  "retention_180_best_metrics": {
-    "roc_auc": 0.605,
-    "recall": 0.761,
-    "f1": 0.758,
-    "pr_auc": 0.758
-  },
-  "churn_365_best_metrics": {
-    "roc_auc": 0.680,
-    "recall": 0.518,
-    "f1": 0.287
+  "eda_outputs": {
+    "missing_values": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/missing_values.png",
+    "class_imbalance": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/class_imbalance.png",
+    "correlation_heatmap": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/correlation_heatmap.png",
+    "monthly_donation_trend": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/monthly_donation_trend.png",
+    "cohort_retention_heatmap": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/cohort_retention_heatmap.png",
+    "donor_lifecycle_distributions": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/donor_lifecycle_distributions.png",
+    "rfm_segment_distribution": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/figures/rfm_segment_distribution.png"
   }
 }

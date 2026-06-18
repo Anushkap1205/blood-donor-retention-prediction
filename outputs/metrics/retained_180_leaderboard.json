@@ -1,37 +1,37 @@
 [
   {
+    "model": "logistic_regression",
+    "roc_auc": 0.613027795827016,
+    "f1": 0.7228017883755589,
+    "recall": 0.6807017543859649,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_logistic_regression.joblib"
+  },
+  {
     "model": "random_forest",
-    "roc_auc": 0.6051108015099013,
-    "f1": 0.7583988563259471,
-    "recall": 0.760573476702509,
+    "roc_auc": 0.6121530575409717,
+    "f1": 0.7702513966480447,
+    "recall": 0.7740350877192983,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_random_forest.joblib"
   },
   {
-    "model": "xgboost",
-    "roc_auc": 0.6005010181116708,
-    "f1": 0.8077985876573534,
-    "recall": 0.943010752688172,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_xgboost.joblib"
-  },
-  {
-    "model": "catboost",
-    "roc_auc": 0.5994675752271401,
-    "f1": 0.7418647166361975,
-    "recall": 0.7272401433691756,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_catboost.joblib"
-  },
-  {
     "model": "lightgbm",
-    "roc_auc": 0.5936414163064576,
-    "f1": 0.7248421834385443,
-    "recall": 0.6996415770609319,
+    "roc_auc": 0.609331745000361,
+    "f1": 0.7810508182601206,
+    "recall": 0.7954385964912281,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_lightgbm.joblib"
   },
   {
-    "model": "logistic_regression",
-    "roc_auc": 0.5908051417616309,
-    "f1": 0.6952141057934509,
-    "recall": 0.6430107526881721,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_logistic_regression.joblib"
+    "model": "catboost",
+    "roc_auc": 0.6080025990903184,
+    "f1": 0.7810508182601206,
+    "recall": 0.7954385964912281,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_catboost.joblib"
+  },
+  {
+    "model": "xgboost",
+    "roc_auc": 0.6060893798281712,
+    "f1": 0.7809589513625388,
+    "recall": 0.7943859649122808,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_xgboost.joblib"
   }
 ]

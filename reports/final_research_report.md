@@ -29,44 +29,57 @@ At anchor *t*, label = 1 if **no** donation occurs within (*t*, *t* + 365 days].
 
 ## Model Results
 
-### 180-Day Retention
+### 180-Day Retention (Base Rate: 70.11%)
+*Evaluation metrics computed on the group-held-out test set:*
 
-| Model | ROC-AUC | Recall | F1 | PR-AUC |
-|-------|---------|--------|-----|--------|
-| **Random Forest** (selected) | **0.605** | 0.761 | 0.758 | 0.758 |
-| XGBoost | 0.601 | **0.943** | 0.808 | — |
-| Logistic Regression | 0.591 | 0.643 | 0.695 | — |
+| Model | ROC-AUC | PR-AUC | F1 | Recall | Precision | Brier Score |
+|-------|---------|--------|----|--------|-----------|-------------|
+| **Logistic Regression** (selected) | **0.6130** | **0.7622** | 0.7228 | 0.6807 | 0.7705 | 0.2370 |
+| Random Forest | 0.6122 | 0.7559 | 0.7703 | 0.7740 | 0.7665 | **0.2246** |
+| LightGBM | 0.6093 | 0.7500 | **0.7811** | **0.7954** | 0.7672 | 0.2375 |
+| CatBoost | 0.6080 | 0.7493 | **0.7811** | **0.7954** | 0.7672 | 0.2374 |
+| XGBoost | 0.6061 | 0.7463 | 0.7810 | 0.7944 | **0.7680** | 0.2375 |
 
-**Selection:** Random Forest chosen for best ROC-AUC and balanced precision-recall on held-out test set. **Operational note:** If maximizing at-risk donor capture, XGBoost recall (0.943) may be preferred despite lower AUC — consistent with Kiarie et al. (2024) emphasis on recall for imbalanced retention.
+**Selection:** Logistic Regression chosen for best overall ROC-AUC and PR-AUC. However, for operational campaigns prioritizing capture rate, tree models like LightGBM / CatBoost may be preferred for their higher recall (79.54%).
 
-### 365-Day Churn
+### 365-Day Churn (Base Rate: 10.22%)
+*Evaluation metrics computed on the group-held-out test set:*
 
-| Model | ROC-AUC | Recall | F1 |
-|-------|---------|--------|-----|
-| **Random Forest** (selected) | **0.680** | 0.518 | 0.287 |
-| CatBoost | 0.675 | **0.612** | 0.299 |
-| Logistic Regression | 0.671 | 0.661 | 0.279 |
+| Model | ROC-AUC | PR-AUC | F1 | Recall | Precision | Brier Score |
+|-------|---------|--------|----|--------|-----------|-------------|
+| **CatBoost** (selected) | **0.7007** | 0.1880 | **0.3226** | 0.6635 | **0.2131** | 0.2217 |
+| Logistic Regression | 0.6988 | **0.1926** | 0.3005 | **0.7013** | 0.1913 | 0.2218 |
+| XGBoost | 0.6945 | 0.1800 | 0.3223 | 0.6572 | 0.2135 | 0.2196 |
+| Random Forest | 0.6941 | 0.1736 | 0.2948 | 0.4937 | 0.2102 | **0.1516** |
+| LightGBM | 0.6865 | 0.1789 | 0.3223 | 0.6572 | 0.2135 | 0.2207 |
 
-**Selection:** Random Forest for best discrimination (AUC). Churn is minority class (~15%); PR-AUC and recall should guide threshold tuning in production.
+**Selection:** CatBoost chosen for best discrimination (ROC-AUC) and balanced F1 score under class imbalance. Under extreme target imbalance (10.22%), PR-AUC is the primary performance index; Logistic Regression has the highest PR-AUC (0.1926) and Recall (0.7013) but suffers on precision.
 
-5-fold CV ROC-AUC stable (σ ≈ 0.01). Full metrics: `outputs/metrics/`.
+5-fold group cross-validation ROC-AUC remains stable (σ ≈ 0.01). Reliability calibration curves and curves plots saved under `outputs/figures/`.
 
 ## Explainability
 
-**Top retention drivers (SHAP, Random Forest):**
+**Top Retention Drivers (Permutation Importance, Logistic Regression):**
+1. `recent_activity_score`
+2. `donations_last_6_months`
+3. `walkin_ratio` / `camp_ratio`
+4. `max_gap_days`
 
-1. `walkin_donation_count` / `walkin_ratio`
-2. `camp_ratio`
-3. `min_gap_days`, `days_since_last_donation`
-4. `total_donations`, `tenure_days`
+**Top Churn Drivers (SHAP Summary, CatBoost):**
+1. `walkin_donation_count`
+2. `walkin_ratio` / `camp_ratio`
+3. `recent_activity_score`
+4. `std_gap_days`
 
-**Literature comparison:**
+**Literature Comparison & Performance Gap:**
 
 | Agrees | Differs |
 |--------|---------|
-| Recency and frequency in top tier (Yeh 2009; Liu 2022) | Channel mix (camp/walk-in) dominates here — India camp context (Mohammed 2025) |
-| Tenure and donation count matter (Kauten 2021) | Modest AUC suggests synthetic data limits behavioral signal |
-| Gap statistics capture habit (Almutairi 2019) | Blood group weaker than literature — limited variance in synthetic set |
+| Recency and frequency in top tier (Yeh 2009; Liu 2022) | Channel mix (camp vs walk-in) is the dominant predictor cohort here. |
+| Tenure and gap metrics capture habit (van Dongen 2015) | Low overall ROC-AUC (0.61–0.70) vs. literature benchmarks (0.80+) highlights synthetic dataset limitations. |
+
+*Why the Model Performance Gap?*
+Literature benchmarks achieving AUCs above 0.80+ typically incorporate deep behavioral records (e.g., historical deferral details, precise travel distances, SMS response logs, hemoglobin levels, and marketing campaign histories). In our synthetic dataset, these signals are absent, and the simulated generator adds uniform noise, bounding the predictive power of RFMTC constructs.
 
 ## Segmentation
 
@@ -74,11 +87,15 @@ RFM segments: 1,241 Active, 874 Lost, 859 At-Risk, 492 Loyal. See `reports/segme
 
 ## Recommendations
 
-1. Deploy weekly scoring → `reports/donor_action_plan.csv`
-2. Prioritize SMS for medium/high risk; phone for >12-month inactive (Yang 2020)
-3. Camp-targeted outreach for high `camp_ratio` donors
-4. First-donation counseling within 7 days (Bagot 2016)
-5. Recalibrate thresholds on real Samarpan data when available
+> [!WARNING]
+> **Synthetic Data Caveat:**
+> All models, segmentations, and rules are developed and validated against the simulated Samarpan V2 dataset. These patterns must be validated against real, anonymized hospital/blood bank data before deploying in a live clinical workflow.
+
+1. Deploy weekly scoring using `reports/donor_action_plan.csv` for targeted communications.
+2. Prioritize SMS for medium/high risk; phone outreach for >12-month inactive (Yang 2020).
+3. Mobile camp-targeted promotions for donors with a high historical `camp_ratio`.
+4. First-donation counseling within 7 days (Bagot 2016).
+5. Recalibrate thresholds on real Samarpan clinical logs when available.
 
 ## Reproducibility
 
@@ -88,3 +105,4 @@ python scripts/run_pipeline.py
 ```
 
 Outputs: models, figures, metrics, and reports under `outputs/` and `reports/`.
+

@@ -30,8 +30,8 @@ class ModelResult:
 
 
 def _build_preprocessor(x: pd.DataFrame) -> ColumnTransformer:
-    numeric_features = [c for c in x.columns if c not in {"Gender", "Blood_Group", "age_group", "Donation_Frequency_Label"}]
-    categorical_features = ["Gender", "Blood_Group", "age_group", "Donation_Frequency_Label"]
+    numeric_features = [c for c in x.columns if c not in {"Gender", "Blood_Group", "age_group"}]
+    categorical_features = ["Gender", "Blood_Group", "age_group"]
     return ColumnTransformer(
         transformers=[
             (
@@ -56,6 +56,7 @@ def _build_preprocessor(x: pd.DataFrame) -> ColumnTransformer:
             ),
         ]
     )
+
 
 
 def _get_models() -> dict:
@@ -123,15 +124,28 @@ def train_all_models(
     x: pd.DataFrame,
     y: pd.Series,
     target_name: str,
+    groups: pd.Series | None = None,
 ) -> list[ModelResult]:
     """Train and evaluate all candidate models for a target."""
-    x_train, x_test, y_train, y_test = train_test_split(
-        x,
-        y,
-        test_size=TEST_SIZE,
-        random_state=RANDOM_STATE,
-        stratify=y,
-    )
+    if groups is not None:
+        from sklearn.model_selection import StratifiedGroupKFold
+        sgkf = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+        train_idx, test_idx = next(sgkf.split(x, y, groups))
+        x_train, x_test = x.iloc[train_idx], x.iloc[test_idx]
+        y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
+        groups_train = groups.iloc[train_idx]
+        groups_test = groups.iloc[test_idx]
+    else:
+        x_train, x_test, y_train, y_test = train_test_split(
+            x,
+            y,
+            test_size=TEST_SIZE,
+            random_state=RANDOM_STATE,
+            stratify=y,
+        )
+        groups_train = None
+        groups_test = None
+
     preprocessor = _build_preprocessor(x)
     scoring = {
         "accuracy": "accuracy",
@@ -141,7 +155,12 @@ def train_all_models(
         "roc_auc": "roc_auc",
         "average_precision": "average_precision",
     }
-    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+    
+    if groups is not None:
+        cv = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+    else:
+        cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+        
     results: list[ModelResult] = []
 
     for model_name, estimator in _get_models().items():
@@ -151,17 +170,66 @@ def train_all_models(
                 ("model", estimator),
             ]
         )
+        
+        # Apply scale_pos_weight dynamically to XGBoost based on train split imbalance
+        if model_name == "xgboost":
+            scale_pos = float((y_train == 0).sum() / (y_train == 1).sum())
+            estimator.set_params(scale_pos_weight=scale_pos)
+            pipeline = Pipeline(
+                steps=[
+                    ("preprocessor", preprocessor),
+                    ("model", estimator),
+                ]
+            )
+
+        # Hyperparameter tuning for boosting models
+        tuned_pipeline = pipeline
+        if model_name in {"xgboost", "lightgbm", "catboost"}:
+            from sklearn.model_selection import RandomizedSearchCV
+            param_grids = {
+                "xgboost": {
+                    "model__n_estimators": [100, 200, 300],
+                    "model__max_depth": [3, 5, 7],
+                    "model__learning_rate": [0.01, 0.05, 0.1],
+                    "model__subsample": [0.7, 0.9, 1.0],
+                },
+                "lightgbm": {
+                    "model__n_estimators": [100, 200, 300],
+                    "model__max_depth": [3, 5, -1],
+                    "model__learning_rate": [0.01, 0.05, 0.1],
+                    "model__subsample": [0.7, 0.9, 1.0],
+                },
+                "catboost": {
+                    "model__iterations": [100, 200, 300],
+                    "model__depth": [4, 6, 8],
+                    "model__learning_rate": [0.01, 0.05, 0.1],
+                }
+            }
+            search = RandomizedSearchCV(
+                pipeline,
+                param_distributions=param_grids[model_name],
+                n_iter=5,
+                cv=cv,
+                scoring="roc_auc",
+                random_state=RANDOM_STATE,
+                n_jobs=-1,
+            )
+            search.fit(x_train, y_train, groups=groups_train)
+            tuned_pipeline = search.best_estimator_
+
         cv_scores = cross_validate(
-            pipeline,
+            tuned_pipeline,
             x_train,
             y_train,
+            groups=groups_train,
             cv=cv,
             scoring=scoring,
             n_jobs=-1,
         )
-        pipeline.fit(x_train, y_train)
-        y_pred = pipeline.predict(x_test)
-        y_prob = pipeline.predict_proba(x_test)[:, 1]
+        
+        tuned_pipeline.fit(x_train, y_train)
+        y_pred = tuned_pipeline.predict(x_test)
+        y_prob = tuned_pipeline.predict_proba(x_test)[:, 1]
 
         from sklearn.metrics import (
             accuracy_score,
@@ -171,6 +239,7 @@ def train_all_models(
             precision_score,
             recall_score,
             roc_auc_score,
+            brier_score_loss,
         )
 
         metrics = {
@@ -180,6 +249,7 @@ def train_all_models(
             "f1": float(f1_score(y_test, y_pred, zero_division=0)),
             "roc_auc": float(roc_auc_score(y_test, y_prob)),
             "pr_auc": float(average_precision_score(y_test, y_prob)),
+            "brier_score": float(brier_score_loss(y_test, y_prob)),
             "confusion_matrix": confusion_matrix(y_test, y_pred).tolist(),
             "positive_rate_train": float(y_train.mean()),
             "positive_rate_test": float(y_test.mean()),
@@ -193,10 +263,11 @@ def train_all_models(
         }
 
         model_path = MODELS_DIR / f"{target_name}_{model_name}.joblib"
-        joblib.dump(pipeline, model_path)
+        joblib.dump(tuned_pipeline, model_path)
         metrics_path = METRICS_DIR / f"{target_name}_{model_name}.json"
         with open(metrics_path, "w", encoding="utf-8") as handle:
             json.dump({"metrics": metrics, "cv_metrics": cv_metrics}, handle, indent=2)
+
 
         results.append(
             ModelResult(

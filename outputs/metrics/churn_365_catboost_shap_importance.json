@@ -1,0 +1,122 @@
+[
+  {
+    "feature": "num__walkin_donation_count",
+    "mean_abs_shap": 0.19209678578043485
+  },
+  {
+    "feature": "num__walkin_ratio",
+    "mean_abs_shap": 0.14464956848738852
+  },
+  {
+    "feature": "num__camp_ratio",
+    "mean_abs_shap": 0.11260698027163822
+  },
+  {
+    "feature": "num__recent_activity_score",
+    "mean_abs_shap": 0.011844753990479732
+  },
+  {
+    "feature": "num__std_gap_days",
+    "mean_abs_shap": 0.010657431933904823
+  },
+  {
+    "feature": "num__max_gap_days",
+    "mean_abs_shap": 0.004188788983193874
+  },
+  {
+    "feature": "num__total_donations",
+    "mean_abs_shap": 0.004145644264906872
+  },
+  {
+    "feature": "num__years_as_donor",
+    "mean_abs_shap": 0.00382205286450875
+  },
+  {
+    "feature": "num__donation_type_whole_blood_share",
+    "mean_abs_shap": 0.003395350077112059
+  },
+  {
+    "feature": "num__days_since_last_donation",
+    "mean_abs_shap": 0.0031365258463365566
+  },
+  {
+    "feature": "num__avg_gap_days",
+    "mean_abs_shap": 0.002477923898015053
+  },
+  {
+    "feature": "num__tenure_days",
+    "mean_abs_shap": 0.002450403055516631
+  },
+  {
+    "feature": "cat__Gender_Male",
+    "mean_abs_shap": 0.002438566111270224
+  },
+  {
+    "feature": "cat__Gender_Female",
+    "mean_abs_shap": 0.002230900257359959
+  },
+  {
+    "feature": "num__total_units_donated",
+    "mean_abs_shap": 0.0021421124740513067
+  },
+  {
+    "feature": "num__Age",
+    "mean_abs_shap": 0.002029837755676487
+  },
+  {
+    "feature": "num__donations_last_12_months",
+    "mean_abs_shap": 0.0019601084731782075
+  },
+  {
+    "feature": "num__donations_last_3_months",
+    "mean_abs_shap": 0.0016644680265622215
+  },
+  {
+    "feature": "num__donation_velocity",
+    "mean_abs_shap": 0.0016035853864634591
+  },
+  {
+    "feature": "num__camp_donation_count",
+    "mean_abs_shap": 0.0015229162768925217
+  },
+  {
+    "feature": "num__min_gap_days",
+    "mean_abs_shap": 0.001196826586271
+  },
+  {
+    "feature": "num__days_since_registration",
+    "mean_abs_shap": 0.0010834364625679068
+  },
+  {
+    "feature": "cat__Blood_Group_O-",
+    "mean_abs_shap": 0.0009105713124018114
+  },
+  {
+    "feature": "num__donations_last_6_months",
+    "mean_abs_shap": 0.00068221032430923
+  },
+  {
+    "feature": "cat__Blood_Group_A+",
+    "mean_abs_shap": 0.0005177988878685566
+  },
+  {
+    "feature": "cat__age_group_46-60",
+    "mean_abs_shap": 0.0005048392722615599
+  },
+  {
+    "feature": "cat__age_group_26-35",
+    "mean_abs_shap": 0.0004033201338415446
+  },
+  {
+    "feature": "cat__age_group_36-45",
+    "mean_abs_shap": 0.0003971657323488528
+  },
+  {
+    "feature": "cat__Blood_Group_O+",
+    "mean_abs_shap": 0.0003788023282061667
+  },
+  {
+    "feature": "cat__Blood_Group_B+",
+    "mean_abs_shap": 0.00023403211816977056
+  }
+]
