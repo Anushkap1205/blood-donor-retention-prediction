@@ -1,6 +1,11 @@
 # Blood Donor Retention Prediction System
 
+> [!WARNING]
+> **Synthetic Dataset Caveat:**
+> The Samarpan Blood Bank dataset is simulated/synthetic. All models, segmentation algorithms, and intervention rules have been validated only against this synthetic dataset. They must be validated against real clinical/operational records before any real-world clinical or campaign deployment.
+
 Research-guided machine learning system for predicting blood donor return within **180 days** and churn within **365 days**, built on the Samarpan Blood Bank synthetic dataset.
+
 
 ## Features
 
@@ -74,12 +79,18 @@ python scripts/run_pipeline.py
 | `reports/final_research_report.md` | Full research-style write-up |
 | `reports/donor_action_plan.csv` | Scored donors + recommended actions |
 
-## Model Selection (Latest Run)
+## Model Selection & Calibration (Hardened Run)
 
-| Problem | Best Model (ROC-AUC) | Path |
-|---------|---------------------|------|
-| 180-day retention | Random Forest (0.605) | `outputs/models/retained_180_random_forest.joblib` |
-| 365-day churn | Random Forest (0.680) | `outputs/models/churn_365_random_forest.joblib` |
+* **Validation Strategy:** Evaluated using **5-fold `StratifiedGroupKFold`** grouped on `Donor_ID` to prevent donor identity leakage, alongside randomized hyperparameter search.
+* **Probability Calibration:** Tracked Brier scores and generated calibration curves to ensure predicted risk probabilities are reliable for ranking intervention targets.
+
+| Problem (Base Rate) | Champion Model | test ROC-AUC | test PR-AUC | Brier Score | Path |
+|---------|----------------|--------------|-------------|-------------|------|
+| 180-day retention (70.11%) | **Logistic Regression** | **0.6130** | **0.7622** | 0.2370 | `outputs/models/retained_180_logistic_regression.joblib` |
+| 365-day churn (10.22%) | **CatBoost** | **0.7007** | **0.1880** | 0.2217 | `outputs/models/churn_365_catboost.joblib` |
+
+For full splits, parameter search grids, metrics, and calibration curves, see [model_card.md](file:///Users/anushkapatil/Projects/blood-donor-retention-prediction/reports/model_card.md).
+
 
 ## References
 
