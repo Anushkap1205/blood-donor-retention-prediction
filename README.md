@@ -17,28 +17,23 @@ Research-guided machine learning system for predicting blood donor return within
 - RFM donor segmentation (Loyal / Active / At-Risk / Lost)
 - Retention strategy engine with evidence-ranked interventions
 
-## Project Structure
+## Project Structure (v2 Production)
 
 ```
+├── config/pipeline.yaml           # Central configuration
 ├── data/                          # Samarpan Excel dataset
-├── src/
-│   ├── data/                      # Loading & cleaning
-│   ├── features/                  # Feature engineering
-│   ├── models/                    # Training & evaluation
-│   ├── eda/                       # Visualizations
-│   ├── segmentation/              # RFM clustering
-│   ├── explainability/            # SHAP & permutation importance
-│   └── strategies/                # Retention recommendations
+├── research/                      # Audit reports, architecture, deployment guide
+├── feature_store/                 # Enhanced RFMTC+ feature engineering
+├── training/                      # Survival, uplift, fairness modules
+├── inference/                     # Scoring + local SHAP explanations
+├── recommendation_engine/         # Rules + causal intervention engine
+├── dashboard/streamlit_app.py     # Executive / Donor / Operations views
+├── src/                           # Core library (data, models, EDA)
 ├── scripts/
-│   ├── run_pipeline.py            # Full end-to-end pipeline
-│   └── finish_pipeline.py         # Post-training steps only
-├── notebooks/
-│   └── donor_retention_analysis.ipynb
-├── reports/                       # Research & business reports
-└── outputs/
-    ├── figures/
-    ├── models/
-    └── metrics/
+│   ├── run_pipeline.py            # Legacy end-to-end pipeline
+│   └── run_production_pipeline.py # v2 production orchestrator
+├── tests/                         # Unit tests
+└── outputs/                       # Models, metrics, figures
 ```
 
 ## Quick Start
@@ -48,7 +43,15 @@ Research-guided machine learning system for predicting blood donor return within
 brew install libomp
 
 pip install -r requirements.txt
-python scripts/run_pipeline.py
+
+# v2 production pipeline (recommended)
+python scripts/run_production_pipeline.py
+
+# Streamlit dashboard
+streamlit run dashboard/streamlit_app.py
+
+# Unit tests
+pytest tests/ -v
 ```
 
 ## Dataset
@@ -67,10 +70,18 @@ python scripts/run_pipeline.py
 | `retained_180` | 1 if next donation within 180 days after anchor donation |
 | `churn_365` | 1 if no donation within 365 days after anchor donation |
 
-## Reports
+## Research & Audit Reports (v2)
 
 | Report | Description |
 |--------|-------------|
+| `research/repository_audit_report.md` | Phase 1 scientific code & data audit |
+| `research/retention_drivers_ranked.md` | Phase 2 literature-backed driver ranking |
+| `research/india_retention_strategy_framework.md` | Phase 3 India-specific interventions |
+| `research/feature_engineering_report.md` | Phase 4 feature formulas & rationale |
+| `research/model_comparison_report.md` | Phase 5 model selection architecture |
+| `research/architecture.md` | Phase 10 system architecture diagram |
+| `research/deployment_guide.md` | Production deployment instructions |
+| `research/future_roadmap.md` | Phase 12 improvement roadmap |
 | `reports/research_review.md` | 28-paper literature summary |
 | `reports/research_feature_mapping.md` | Evidence → feature mapping |
 | `reports/data_dictionary.md` | Schema documentation |
