@@ -1,0 +1,9 @@
+{
+  "pipeline_version": "2.0.0",
+  "dataset_rows": 24195,
+  "best_models": {
+    "retained_180": "logistic_regression",
+    "churn_365": "catboost"
+  },
+  "feature_count": 41
+}

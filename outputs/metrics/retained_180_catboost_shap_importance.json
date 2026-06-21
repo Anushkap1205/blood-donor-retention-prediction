@@ -1,0 +1,122 @@
+[
+  {
+    "feature": "num__walkin_ratio",
+    "mean_abs_shap": 0.07489985602913245
+  },
+  {
+    "feature": "num__walkin_donation_count",
+    "mean_abs_shap": 0.054647133528760265
+  },
+  {
+    "feature": "num__campaign_response_history",
+    "mean_abs_shap": 0.04481367208819076
+  },
+  {
+    "feature": "num__camp_ratio",
+    "mean_abs_shap": 0.04297707463822915
+  },
+  {
+    "feature": "num__recent_activity_score",
+    "mean_abs_shap": 0.01160150787602248
+  },
+  {
+    "feature": "num__communication_response_rate_proxy",
+    "mean_abs_shap": 0.006560547227346223
+  },
+  {
+    "feature": "num__loyalty_score",
+    "mean_abs_shap": 0.006106780274519979
+  },
+  {
+    "feature": "num__total_units_donated",
+    "mean_abs_shap": 0.0050389702164117785
+  },
+  {
+    "feature": "num__anchor_quarter",
+    "mean_abs_shap": 0.00448625785732372
+  },
+  {
+    "feature": "num__total_donations",
+    "mean_abs_shap": 0.004460104085553046
+  },
+  {
+    "feature": "num__anchor_sin_month",
+    "mean_abs_shap": 0.004131153976335408
+  },
+  {
+    "feature": "num__donations_last_12_months",
+    "mean_abs_shap": 0.003675888226254715
+  },
+  {
+    "feature": "num__anchor_month",
+    "mean_abs_shap": 0.003471348160044376
+  },
+  {
+    "feature": "num__is_regular_giver",
+    "mean_abs_shap": 0.0034628711009110314
+  },
+  {
+    "feature": "num__donor_lifetime_value",
+    "mean_abs_shap": 0.003316708230179394
+  },
+  {
+    "feature": "num__Age",
+    "mean_abs_shap": 0.002798961628164223
+  },
+  {
+    "feature": "num__years_as_donor",
+    "mean_abs_shap": 0.002789353978931261
+  },
+  {
+    "feature": "num__gap_trend_days",
+    "mean_abs_shap": 0.002307496390972714
+  },
+  {
+    "feature": "num__donation_type_whole_blood_share",
+    "mean_abs_shap": 0.0021975667645203817
+  },
+  {
+    "feature": "num__max_gap_days",
+    "mean_abs_shap": 0.002158510326298067
+  },
+  {
+    "feature": "num__days_since_registration",
+    "mean_abs_shap": 0.0021354267170525165
+  },
+  {
+    "feature": "num__appointment_attendance_rate_proxy",
+    "mean_abs_shap": 0.0020155041771080548
+  },
+  {
+    "feature": "num__anchor_cos_month",
+    "mean_abs_shap": 0.001964776088871538
+  },
+  {
+    "feature": "num__tenure_days",
+    "mean_abs_shap": 0.0019588415517792102
+  },
+  {
+    "feature": "num__donation_consistency",
+    "mean_abs_shap": 0.0018115800715895356
+  },
+  {
+    "feature": "num__donation_velocity",
+    "mean_abs_shap": 0.0016102524035638147
+  },
+  {
+    "feature": "num__donations_last_6_months",
+    "mean_abs_shap": 0.0015589536012767136
+  },
+  {
+    "feature": "num__preferred_donation_interval_days",
+    "mean_abs_shap": 0.0014569450763039242
+  },
+  {
+    "feature": "num__engagement_score",
+    "mean_abs_shap": 0.0013370783400087317
+  },
+  {
+    "feature": "num__avg_gap_days",
+    "mean_abs_shap": 0.001320084542669731
+  }
+]

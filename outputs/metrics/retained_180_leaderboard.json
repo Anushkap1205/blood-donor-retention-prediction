@@ -1,37 +1,37 @@
 [
   {
     "model": "logistic_regression",
-    "roc_auc": 0.615987004548408,
-    "f1": 0.7239515377446412,
-    "recall": 0.6814035087719298,
+    "roc_auc": 0.6163797559742978,
+    "f1": 0.7215496368038741,
+    "recall": 0.6796491228070175,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_logistic_regression.joblib"
   },
   {
     "model": "random_forest",
-    "roc_auc": 0.6129853440184825,
-    "f1": 0.7681515257804279,
-    "recall": 0.7684210526315789,
+    "roc_auc": 0.6131023030828099,
+    "f1": 0.7698759391927311,
+    "recall": 0.7729824561403509,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_random_forest.joblib"
   },
   {
+    "model": "catboost",
+    "roc_auc": 0.6129261425167858,
+    "f1": 0.7740476604626891,
+    "recall": 0.7807017543859649,
+    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_catboost.joblib"
+  },
+  {
     "model": "lightgbm",
-    "roc_auc": 0.609331745000361,
+    "roc_auc": 0.6121162370947946,
     "f1": 0.7810508182601206,
     "recall": 0.7954385964912281,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_lightgbm.joblib"
   },
   {
-    "model": "catboost",
-    "roc_auc": 0.6080025990903184,
-    "f1": 0.7810508182601206,
-    "recall": 0.7954385964912281,
-    "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_catboost.joblib"
-  },
-  {
     "model": "xgboost",
-    "roc_auc": 0.6060893798281712,
-    "f1": 0.7809589513625388,
-    "recall": 0.7943859649122808,
+    "roc_auc": 0.6110508988520684,
+    "f1": 0.7800586510263929,
+    "recall": 0.7933333333333333,
     "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/retained_180_xgboost.joblib"
   }
 ]

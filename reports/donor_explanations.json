@@ -1,0 +1,4256 @@
+[
+  {
+    "retention_probability": 0.559201707804641,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00324"
+  },
+  {
+    "retention_probability": 0.40824730199376497,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 250 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03198"
+  },
+  {
+    "retention_probability": 0.3707167584830249,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00967"
+  },
+  {
+    "retention_probability": 0.5466229477082295,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 209 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02619"
+  },
+  {
+    "retention_probability": 0.5023334048348077,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02077"
+  },
+  {
+    "retention_probability": 0.4449250094326879,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 220 days ago"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01427"
+  },
+  {
+    "retention_probability": 0.6512316602169841,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03495"
+  },
+  {
+    "retention_probability": 0.5137601210014398,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02435"
+  },
+  {
+    "retention_probability": 0.5647494692943732,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01299"
+  },
+  {
+    "retention_probability": 0.5526062511578953,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 462 days ago",
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00979"
+  },
+  {
+    "retention_probability": 0.47269822138293816,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00301"
+  },
+  {
+    "retention_probability": 0.2709494522296034,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02092"
+  },
+  {
+    "retention_probability": 0.6046450925608691,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00048"
+  },
+  {
+    "retention_probability": 0.570307469000661,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00877"
+  },
+  {
+    "retention_probability": 0.6598555422929724,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02298"
+  },
+  {
+    "retention_probability": 0.5864826389134397,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 320 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00251"
+  },
+  {
+    "retention_probability": 0.5515866652923518,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 182 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00233"
+  },
+  {
+    "retention_probability": 0.4160246522176497,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 495 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03138"
+  },
+  {
+    "retention_probability": 0.5772823375921398,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02040"
+  },
+  {
+    "retention_probability": 0.6478848324476423,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01490"
+  },
+  {
+    "retention_probability": 0.3841811239172944,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 295 days ago"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01713"
+  },
+  {
+    "retention_probability": 0.4290488858475246,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 204 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02084"
+  },
+  {
+    "retention_probability": 0.6439138457020095,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00331"
+  },
+  {
+    "retention_probability": 0.3969638528503144,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00726"
+  },
+  {
+    "retention_probability": 0.40905153392456506,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01308"
+  },
+  {
+    "retention_probability": 0.5632355797207609,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 236 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00992"
+  },
+  {
+    "retention_probability": 0.5698693948828913,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01104"
+  },
+  {
+    "retention_probability": 0.3605643172202335,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 828 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02515"
+  },
+  {
+    "retention_probability": 0.38818823761775906,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00234"
+  },
+  {
+    "retention_probability": 0.5398102959005606,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02196"
+  },
+  {
+    "retention_probability": 0.6036356362084011,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02116"
+  },
+  {
+    "retention_probability": 0.4390551326294816,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02483"
+  },
+  {
+    "retention_probability": 0.4311561657677446,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00155"
+  },
+  {
+    "retention_probability": 0.4708542173002292,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00201"
+  },
+  {
+    "retention_probability": 0.46751978103137154,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01678"
+  },
+  {
+    "retention_probability": 0.4573434670028528,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02961"
+  },
+  {
+    "retention_probability": 0.43747059681571976,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 422 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01572"
+  },
+  {
+    "retention_probability": 0.4771666173838591,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 437 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02073"
+  },
+  {
+    "retention_probability": 0.6243558695554284,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01187"
+  },
+  {
+    "retention_probability": 0.40245681998878796,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 288 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01112"
+  },
+  {
+    "retention_probability": 0.659117616395979,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01195"
+  },
+  {
+    "retention_probability": 0.3371234367129628,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk",
+      "First-time donor with no established donation habit"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00677"
+  },
+  {
+    "retention_probability": 0.37335587247327745,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00240"
+  },
+  {
+    "retention_probability": 0.3885139273077417,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 252 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00293"
+  },
+  {
+    "retention_probability": 0.5833991050249376,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03190"
+  },
+  {
+    "retention_probability": 0.5565750813652413,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00893"
+  },
+  {
+    "retention_probability": 0.5866009130126139,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02171"
+  },
+  {
+    "retention_probability": 0.5532411646298765,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03188"
+  },
+  {
+    "retention_probability": 0.6305862216887821,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00905"
+  },
+  {
+    "retention_probability": 0.5670391362379801,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00620"
+  },
+  {
+    "retention_probability": 0.4223483683843804,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03359"
+  },
+  {
+    "retention_probability": 0.4267945666441404,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01310"
+  },
+  {
+    "retention_probability": 0.561306248965054,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01811"
+  },
+  {
+    "retention_probability": 0.6028324009611749,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03271"
+  },
+  {
+    "retention_probability": 0.4550036502483125,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02421"
+  },
+  {
+    "retention_probability": 0.6395112980675266,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01836"
+  },
+  {
+    "retention_probability": 0.6231195580285712,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01959"
+  },
+  {
+    "retention_probability": 0.5378187133578987,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02804"
+  },
+  {
+    "retention_probability": 0.33073407549585865,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk",
+      "First-time donor with no established donation habit"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00032"
+  },
+  {
+    "retention_probability": 0.33754270825014626,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 668 days ago"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03392"
+  },
+  {
+    "retention_probability": 0.6326312816919261,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02069"
+  },
+  {
+    "retention_probability": 0.5523853788810978,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01922"
+  },
+  {
+    "retention_probability": 0.3840421172564866,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00854"
+  },
+  {
+    "retention_probability": 0.5761219597732298,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01795"
+  },
+  {
+    "retention_probability": 0.3997480377312922,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01079"
+  },
+  {
+    "retention_probability": 0.5518752742977902,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 219 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01198"
+  },
+  {
+    "retention_probability": 0.481629981883572,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 255 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02560"
+  },
+  {
+    "retention_probability": 0.5560588740376577,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00400"
+  },
+  {
+    "retention_probability": 0.5625520514834854,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03016"
+  },
+  {
+    "retention_probability": 0.5349779225666008,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 224 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01132"
+  },
+  {
+    "retention_probability": 0.5001333437526508,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01010"
+  },
+  {
+    "retention_probability": 0.5061054663447057,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02901"
+  },
+  {
+    "retention_probability": 0.5777750032350442,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02429"
+  },
+  {
+    "retention_probability": 0.506180162920453,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 316 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01886"
+  },
+  {
+    "retention_probability": 0.5726003446469532,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01511"
+  },
+  {
+    "retention_probability": 0.5941384709613529,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01500"
+  },
+  {
+    "retention_probability": 0.6125515549156688,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 471 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03224"
+  },
+  {
+    "retention_probability": 0.6063311782888113,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00975"
+  },
+  {
+    "retention_probability": 0.5193176935159651,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01548"
+  },
+  {
+    "retention_probability": 0.445189800217277,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02894"
+  },
+  {
+    "retention_probability": 0.34566238301022156,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk",
+      "First-time donor with no established donation habit"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02858"
+  },
+  {
+    "retention_probability": 0.5259387410494636,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01281"
+  },
+  {
+    "retention_probability": 0.545616117617377,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02223"
+  },
+  {
+    "retention_probability": 0.6671950358870757,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02292"
+  },
+  {
+    "retention_probability": 0.4519569822442682,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00558"
+  },
+  {
+    "retention_probability": 0.5456174042133355,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 280 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01750"
+  },
+  {
+    "retention_probability": 0.5417015675433529,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03202"
+  },
+  {
+    "retention_probability": 0.35123764135974445,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk",
+      "First-time donor with no established donation habit"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03460"
+  },
+  {
+    "retention_probability": 0.4997848191249641,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 440 days ago",
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01681"
+  },
+  {
+    "retention_probability": 0.6123124608908055,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON03260"
+  },
+  {
+    "retention_probability": 0.6241231006673579,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01705"
+  },
+  {
+    "retention_probability": 0.35723710675184495,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 540 days ago"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02374"
+  },
+  {
+    "retention_probability": 0.4370976463134171,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 282 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON01532"
+  },
+  {
+    "retention_probability": 0.48690778650243594,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02988"
+  },
+  {
+    "retention_probability": 0.4056161425102033,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00874"
+  },
+  {
+    "retention_probability": 0.4282120333355255,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 211 days ago",
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02255"
+  },
+  {
+    "retention_probability": 0.26730030313588043,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00603"
+  },
+  {
+    "retention_probability": 0.47877196344676787,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00362"
+  },
+  {
+    "retention_probability": 0.617336178814774,
+    "risk_level": "medium",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Last donation was 200 days ago",
+      "Communication response proxy is low"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON02275"
+  },
+  {
+    "retention_probability": 0.40252953767073263,
+    "risk_level": "high",
+    "top_shap_features": [
+      {
+        "feature": "num__days_since_registration",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__days_since_last_donation",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__donation_consistency",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__preferred_donation_interval_days",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      },
+      {
+        "feature": "num__communication_response_rate_proxy",
+        "shap_value": 0.0,
+        "abs_shap": 0.0
+      }
+    ],
+    "narrative_reasons": [
+      "Appointment attendance proxy suggests no-show risk",
+      "First-time donor with no established donation habit"
+    ],
+    "full_shap_reasons": [
+      "num__days_since_registration decreases retention probability (SHAP=0.000)",
+      "num__days_since_last_donation decreases retention probability (SHAP=0.000)",
+      "num__donation_consistency decreases retention probability (SHAP=0.000)",
+      "num__preferred_donation_interval_days decreases retention probability (SHAP=0.000)",
+      "num__communication_response_rate_proxy decreases retention probability (SHAP=0.000)"
+    ],
+    "Donor_ID": "DON00019"
+  }
+]

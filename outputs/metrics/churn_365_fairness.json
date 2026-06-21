@@ -1,0 +1,73 @@
+{
+  "audit": {
+    "overall": {
+      "n": 3113,
+      "positive_rate": 0.1021522646964343,
+      "predicted_positive_rate": 0.31802120141342755,
+      "tpr_at_default_threshold": 0.6635220125786163,
+      "roc_auc": 0.7020218044351436,
+      "calibration_error": 0.4151806681702993
+    },
+    "by_group": {
+      "Gender": {
+        "Male": {
+          "n": 2196,
+          "positive_rate": 0.09744990892531877,
+          "predicted_positive_rate": 0.3123861566484517,
+          "tpr_at_default_threshold": 0.6728971962616822,
+          "roc_auc": 0.7001942718107831,
+          "calibration_error": 0.4216183474839511
+        },
+        "Female": {
+          "n": 917,
+          "positive_rate": 0.1134133042529989,
+          "predicted_positive_rate": 0.33151581243184297,
+          "tpr_at_default_threshold": 0.6442307692307693,
+          "roc_auc": 0.7034132841328414,
+          "calibration_error": 0.3974875267284391
+        }
+      },
+      "age_group": {
+        "26-35": {
+          "n": 861,
+          "positive_rate": 0.09872241579558652,
+          "predicted_positive_rate": 0.24738675958188153,
+          "tpr_at_default_threshold": 0.6470588235294118,
+          "roc_auc": 0.7504396604002425,
+          "calibration_error": 0.41739481113052823
+        },
+        "18-25": {
+          "n": 646,
+          "positive_rate": 0.09597523219814241,
+          "predicted_positive_rate": 0.32972136222910214,
+          "tpr_at_default_threshold": 0.6129032258064516,
+          "roc_auc": 0.6516515687140964,
+          "calibration_error": 0.4254979129397734
+        },
+        "36-45": {
+          "n": 785,
+          "positive_rate": 0.0929936305732484,
+          "predicted_positive_rate": 0.3159235668789809,
+          "tpr_at_default_threshold": 0.6712328767123288,
+          "roc_auc": 0.7084808373095274,
+          "calibration_error": 0.42484076433121026
+        },
+        "46-60": {
+          "n": 821,
+          "positive_rate": 0.11936662606577345,
+          "predicted_positive_rate": 0.3848964677222899,
+          "tpr_at_default_threshold": 0.7040816326530612,
+          "roc_auc": 0.6834335393908602,
+          "calibration_error": 0.39750923872875094
+        }
+      }
+    },
+    "Gender_demographic_parity_gap": 0.019129655783391264,
+    "Gender_equal_opportunity_gap": 0.028666427030912933,
+    "age_group_demographic_parity_gap": 0.1375097081404084,
+    "age_group_equal_opportunity_gap": 0.0911784068466096
+  },
+  "mitigation_recommendations": [
+    "Demographic parity gap for age_group (0.138) exceeds 0.1. Consider threshold adjustment per group or reweighing training samples."
+  ]
+}

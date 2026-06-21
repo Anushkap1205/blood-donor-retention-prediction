@@ -1,0 +1,29 @@
+{
+  "concordance_index": 0.5715052603703568,
+  "n_train": 13986,
+  "n_test": 3388,
+  "event_rate_train": 0.9591734591734592,
+  "model_path": "/Users/anushkapatil/Projects/blood-donor-retention-prediction/outputs/models/cox_ph_survival.joblib",
+  "top_hazard_ratios": {
+    "exp(coef)": {
+      "loyalty_score": 1.3446897351896425,
+      "total_donations": 1.043487408346926,
+      "avg_gap_days": 1.0004417771369696,
+      "days_since_last_donation": 1.000261647606483,
+      "Age": 0.9994588829648625,
+      "donation_velocity": 0.9976154752181808,
+      "engagement_score": 0.8499027780001119,
+      "camp_ratio": 0.8039200281219562
+    },
+    "p": {
+      "loyalty_score": 1.4948334554024879e-13,
+      "total_donations": 2.4963022884262947e-40,
+      "avg_gap_days": 5.579693536809129e-06,
+      "days_since_last_donation": 0.0003167777037622929,
+      "Age": 0.37349433293671896,
+      "donation_velocity": 0.019252396234050752,
+      "engagement_score": 0.0009816462038298008,
+      "camp_ratio": 8.964202833747667e-20
+    }
+  }
+}

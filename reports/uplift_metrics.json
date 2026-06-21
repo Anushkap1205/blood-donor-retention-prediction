@@ -1,0 +1,45 @@
+{
+  "average_treatment_effect": 0.0,
+  "n_train": 878,
+  "n_test": 220,
+  "treatment_rate_train": 0.8861047835990888,
+  "note": "ATE from synthetic A/B assignments; combine with literature priors for deployment",
+  "treatment_priors": {
+    "sms_reminder": {
+      "lift": 0.04,
+      "confidence": 0.75,
+      "cost": "low",
+      "evidence": "Yang 2020; Mohammed 2025 India"
+    },
+    "whatsapp_reminder": {
+      "lift": 0.03,
+      "confidence": 0.55,
+      "cost": "low",
+      "evidence": "IAMR 2015 India; mixed RCT evidence"
+    },
+    "phone_call": {
+      "lift": 0.08,
+      "confidence": 0.8,
+      "cost": "high",
+      "evidence": "Yang 2020 RCT; Indian tele-recruitment PMC 2014"
+    },
+    "recognition_reward": {
+      "lift": 0.05,
+      "confidence": 0.65,
+      "cost": "medium",
+      "evidence": "Malhotra 2026 North India"
+    },
+    "personalized_message": {
+      "lift": 0.06,
+      "confidence": 0.7,
+      "cost": "medium",
+      "evidence": "Gemelli 2018 Transfusion; Liu 2022"
+    },
+    "camp_invitation": {
+      "lift": 0.07,
+      "confidence": 0.72,
+      "cost": "low",
+      "evidence": "Srivastava 2025 South India; van Dongen 2015"
+    }
+  }
+}

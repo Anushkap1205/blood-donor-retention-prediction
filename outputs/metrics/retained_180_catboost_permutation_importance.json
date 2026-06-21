@@ -1,0 +1,152 @@
+[
+  {
+    "feature": "num__walkin_ratio",
+    "importance_mean": 0.039089790897908996,
+    "importance_std": 0.006708654422190972
+  },
+  {
+    "feature": "num__walkin_donation_count",
+    "importance_mean": 0.011537515375153773,
+    "importance_std": 0.0021932881821092273
+  },
+  {
+    "feature": "num__campaign_response_history",
+    "importance_mean": 0.0026322263222632314,
+    "importance_std": 0.000873568556190181
+  },
+  {
+    "feature": "num__camp_ratio",
+    "importance_mean": 0.00044280442804427443,
+    "importance_std": 0.0003072569740909379
+  },
+  {
+    "feature": "num__max_gap_days",
+    "importance_mean": 0.0002952029520295163,
+    "importance_std": 0.00014760147601475815
+  },
+  {
+    "feature": "num__anchor_sin_month",
+    "importance_mean": 0.00022140221402213722,
+    "importance_std": 7.380073800737908e-05
+  },
+  {
+    "feature": "num__is_regular_giver",
+    "importance_mean": 0.00019680196801967752,
+    "importance_std": 9.840098400983877e-05
+  },
+  {
+    "feature": "num__donations_last_6_months",
+    "importance_mean": 0.00019680196801967752,
+    "importance_std": 9.840098400983877e-05
+  },
+  {
+    "feature": "num__donations_last_3_months",
+    "importance_mean": 0.00019680196801967752,
+    "importance_std": 9.840098400983877e-05
+  },
+  {
+    "feature": "num__loyalty_score",
+    "importance_mean": 0.00014760147601475815,
+    "importance_std": 0.00012051610050593579
+  },
+  {
+    "feature": "num__gap_trend_days",
+    "importance_mean": 0.00012300123001229846,
+    "importance_std": 0.00016502346697415198
+  },
+  {
+    "feature": "num__is_festival_season",
+    "importance_mean": 0.00012300123001229846,
+    "importance_std": 0.00012300123001229846
+  },
+  {
+    "feature": "cat__Gender_Female",
+    "importance_mean": 0.00012300123001229846,
+    "importance_std": 0.00012300123001229846
+  },
+  {
+    "feature": "num__min_gap_days",
+    "importance_mean": 9.840098400983876e-05,
+    "importance_std": 0.00016317957148119825
+  },
+  {
+    "feature": "num__total_donations",
+    "importance_mean": 9.840098400983876e-05,
+    "importance_std": 0.00012051610050593579
+  },
+  {
+    "feature": "num__days_since_registration",
+    "importance_mean": 9.840098400983876e-05,
+    "importance_std": 0.00012051610050593579
+  },
+  {
+    "feature": "num__donation_velocity",
+    "importance_mean": 4.920049200491938e-05,
+    "importance_std": 9.840098400983876e-05
+  },
+  {
+    "feature": "num__donation_consistency",
+    "importance_mean": 4.920049200491938e-05,
+    "importance_std": 9.840098400983876e-05
+  },
+  {
+    "feature": "num__donor_lifetime_value",
+    "importance_mean": 4.920049200491938e-05,
+    "importance_std": 9.840098400983876e-05
+  },
+  {
+    "feature": "num__donation_type_whole_blood_share",
+    "importance_mean": 2.460024600245969e-05,
+    "importance_std": 7.380073800737908e-05
+  },
+  {
+    "feature": "num__anchor_month",
+    "importance_mean": 2.460024600245969e-05,
+    "importance_std": 7.380073800737908e-05
+  },
+  {
+    "feature": "cat__Blood_Group_AB+",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_A-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_A+",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Gender_Male",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_AB-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_B-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_O+",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__Blood_Group_O-",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  },
+  {
+    "feature": "cat__age_group_18-25",
+    "importance_mean": 0.0,
+    "importance_std": 0.0
+  }
+]
