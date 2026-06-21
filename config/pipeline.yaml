@@ -1,0 +1,78 @@
+# Production pipeline configuration — Samarpan Blood Bank Donor Retention Intelligence System
+project:
+  name: blood-donor-retention-intelligence
+  version: "2.0.0"
+  random_state: 42
+
+data:
+  path: data/Samarpan_BloodBank_SyntheticDataset_V2.xlsx
+  validation:
+    max_age: 120
+    min_age: 18
+    required_donor_columns: [Donor_ID, Gender, Age, Blood_Group, Registration_Date]
+    required_donation_columns: [Donation_ID, Donation_Date, Donor_ID, Units_Collected]
+
+targets:
+  retention:
+    name: retained_180
+    window_days: 180
+  churn:
+    name: churn_365
+    window_days: 365
+
+split:
+  method: stratified_group_kfold
+  n_splits: 5
+  test_fold: 0
+  group_column: Donor_ID
+
+models:
+  candidates: [logistic_regression, random_forest, xgboost, lightgbm, catboost]
+  tuning:
+    n_iter: 5
+    scoring: roc_auc
+  calibration:
+    method: isotonic
+    enabled: true
+
+survival:
+  enabled: true
+  censoring_days: 365
+  min_observations: 100
+
+uplift:
+  enabled: true
+  treatments: [sms_reminder, whatsapp_reminder, phone_call, recognition_reward, personalized_message, camp_invitation]
+  learner: t_learner
+  min_treatment_samples: 50
+
+fairness:
+  protected_attributes: [Gender, age_group]
+  metrics: [demographic_parity, equal_opportunity, calibration_by_group]
+  mitigation_threshold: 0.10
+
+recommendation:
+  high_churn_threshold: 0.50
+  high_retention_threshold: 0.80
+  medium_retention_threshold: 0.50
+  long_inactive_days: 365
+  camp_oriented_ratio: 0.60
+  veteran_donations: 5
+
+monitoring:
+  psi_threshold: 0.20
+  auc_drop_threshold: 0.05
+  brier_degradation_threshold: 0.03
+  retrain_cadence_days: 60
+
+experiment:
+  treatment_ratio: 0.90
+  control_ratio: 0.10
+
+paths:
+  outputs: outputs
+  models: outputs/models
+  metrics: outputs/metrics
+  figures: outputs/figures
+  reports: reports
+  feature_store: feature_store/artifacts

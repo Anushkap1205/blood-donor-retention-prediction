@@ -109,7 +109,8 @@ def build_observation_dataset(
                     "walkin_ratio": walkin_count / total_donations,
                     "total_units_donated": float(history["Units_Collected"].sum()),
                     "average_units_per_donation": float(history["Units_Collected"].mean()),
-                    "donation_velocity": total_donations / max(tenure_days / 365.25, 1 / 365.25),
+                    # Cap tenure floor at 90 days to avoid first-donation velocity inflation.
+                    "donation_velocity": total_donations / max(tenure_days / 365.25, 90 / 365.25),
                     "recent_activity_score": _count_in_window(history_dates, anchor, 180)
                     / max(total_donations, 1),
                     "is_first_donation": int(total_donations == 1),

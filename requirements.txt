@@ -13,3 +13,11 @@ statsmodels==0.14.6
 imbalanced-learn==0.14.2
 jupyter>=1.0.0
 nbformat==5.10.4
+# Production v2 dependencies
+lifelines>=0.30.0
+pyyaml>=6.0
+pyarrow>=18.0.0
+streamlit>=1.40.0
+plotly>=5.24.0
+pytest>=8.0.0
+joblib>=1.4.0
